@@ -22,6 +22,10 @@ sim/sim_*
 sim/*.vcd
 sim/*.vvp
 
+# Verilator build artifacts
+sim/obj_dir/
+sim/tests/*.o
+
 # Temporary test files
 test_*.v
 
@@ -38,6 +42,14 @@ __pycache__/
 opencode.json
 AGENTS.md
 .env.*
+
+# Formal verification artifacts
+formal/*/
+!formal/*.v
+!formal/*.sby
+!formal/*.prove.sby
+!formal/*.sh
+!formal/*.tcl
 
 # Editor temporary files
 *.swp
@@ -76,3 +88,14 @@ AGENTS.md
 *.pb
 
 
+obj_dir/
+exported/obj_dir/
+checkpoints/
+vlm_eval/
+gvsoc/
+checkpoints/
+vlm_eval/
+exported/obj_dir/
+exported/*.o
+exported/layer0_test
+smolvlm_out/
