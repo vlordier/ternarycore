@@ -1,9 +1,0 @@
-Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
-Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
-engine_0 (smtbmc) returned pass
-cover trace: engine_0/trace0.vcd
-cover trace: engine_0/trace0.yw
-  reached cover statement axi_gemm_wrapper_formal._witness_.check_cover_axi_gemm_wrapper_formal_v_249_49 at axi_gemm_wrapper_formal.v:249.13-249.52 step 9
-cover trace: engine_0/trace1.vcd
-cover trace: engine_0/trace1.yw
-  reached cover statement axi_gemm_wrapper_formal._witness_.check_cover_axi_gemm_wrapper_formal_v_250_52 at axi_gemm_wrapper_formal.v:250.13-250.36 step 13

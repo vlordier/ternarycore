@@ -1,9 +1,0 @@
-# running in fp8_to_q15_prove/src/
-read -formal fp8_to_q15.v
-read -formal fp8_to_q15_formal.v
-prep -top fp8_to_q15_formal
-
-hierarchy -smtcheck
-rename -witness
-write_jny -no-connections ../model/design.json
-write_rtlil ../model/design.il

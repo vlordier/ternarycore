@@ -1,9 +1,0 @@
-# running in int8_dot/src/
-read -formal int8_dot.v
-read -formal int8_dot_formal.v
-prep -top int8_dot_formal
-
-hierarchy -smtcheck
-rename -witness
-write_jny -no-connections ../model/design.json
-write_rtlil ../model/design.il

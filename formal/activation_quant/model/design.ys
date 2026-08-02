@@ -1,9 +1,0 @@
-# running in activation_quant/src/
-read -formal activation_quant.v
-read -formal activation_quant_formal.v
-prep -top activation_quant_formal
-
-hierarchy -smtcheck
-rename -witness
-write_jny -no-connections ../model/design.json
-write_rtlil ../model/design.il
