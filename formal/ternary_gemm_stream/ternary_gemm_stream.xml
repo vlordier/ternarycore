@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-08-02T17:50:26" hostname="macadam2-2.local" package="ternary_gemm_stream" id="0" name="default" tests="28" errors="0" failures="2" time="0" skipped="19">
+<properties>
+<property name="os" value="Darwin"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="FAIL"/>
+</properties>
+<testcase classname="default" name="build execution" time="0">
+<failure type="FAIL" message="Task returned status FAIL." />
+</testcase>
+<testcase classname="default" name="Property ASSERT in ternary_gemm_stream_formal at ternary_gemm_stream_formal.v:179.13-179.29" time="0" type="ASSERT" location="ternary_gemm_stream_formal.v:179.13-179.29" id="_witness_.check_assert_ternary_gemm_stream_formal_v_179_39">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in ternary_gemm_stream_formal at ternary_gemm_stream_formal.v:205.13-205.29" time="0" type="ASSERT" location="ternary_gemm_stream_formal.v:205.13-205.29" id="_witness_.check_assert_ternary_gemm_stream_formal_v_205_50">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in ternary_gemm_stream_formal at ternary_gemm_stream_formal.v:217.13-217.43" time="0" type="ASSERT" location="ternary_gemm_stream_formal.v:217.13-217.43" id="_witness_.check_assert_ternary_gemm_stream_formal_v_217_55">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in ternary_gemm_stream_formal at ternary_gemm_stream_formal.v:219.17-219.34" time="0" type="ASSERT" location="ternary_gemm_stream_formal.v:219.17-219.34" id="_witness_.check_assert_ternary_gemm_stream_formal_v_219_58">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in ternary_gemm_stream_formal at ternary_gemm_stream_formal.v:242.13-242.105" time="0" type="ASSERT" location="ternary_gemm_stream_formal.v:242.13-242.105" id="_witness_.check_assert_ternary_gemm_stream_formal_v_242_68">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in ternary_gemm_stream_formal at ternary_gemm_stream_formal.v:267.13-267.49" time="0" type="ASSERT" location="ternary_gemm_stream_formal.v:267.13-267.49" id="_witness_.check_assert_ternary_gemm_stream_formal_v_267_84">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in ternary_gemm_stream_formal at ternary_gemm_stream_formal.v:284.13-284.57" time="0" type="ASSERT" location="ternary_gemm_stream_formal.v:284.13-284.57" id="_witness_.check_assert_ternary_gemm_stream_formal_v_284_92">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property COVER in ternary_gemm_stream_formal at ternary_gemm_stream_formal.v:291.13-291.39" time="0" type="COVER" location="ternary_gemm_stream_formal.v:291.13-291.39" id="_witness_.check_cover_ternary_gemm_stream_formal_v_291_97" tracefile="engine_0/trace0.vcd">
+</testcase>
+<testcase classname="default" name="Property COVER in ternary_gemm_stream_formal at ternary_gemm_stream_formal.v:292.13-292.39" time="0" type="COVER" location="ternary_gemm_stream_formal.v:292.13-292.39" id="_witness_.check_cover_ternary_gemm_stream_formal_v_292_99" tracefile="engine_0/trace1.vcd">
+</testcase>
+<testcase classname="default" name="Property COVER in ternary_gemm_stream_formal at ternary_gemm_stream_formal.v:293.13-293.39" time="0" type="COVER" location="ternary_gemm_stream_formal.v:293.13-293.39" id="_witness_.check_cover_ternary_gemm_stream_formal_v_293_101" tracefile="engine_0/trace6.vcd">
+</testcase>
+<testcase classname="default" name="Property COVER in ternary_gemm_stream_formal at ternary_gemm_stream_formal.v:296.13-296.41" time="0" type="COVER" location="ternary_gemm_stream_formal.v:296.13-296.41" id="_witness_.check_cover_ternary_gemm_stream_formal_v_296_103">
+<failure type="COVER" message="Property COVER in ternary_gemm_stream_formal at ternary_gemm_stream_formal.v:296.13-296.41 failed." />
+</testcase>
+<testcase classname="default" name="Property COVER in ternary_gemm_stream_formal at ternary_gemm_stream_formal.v:299.13-299.28" time="0" type="COVER" location="ternary_gemm_stream_formal.v:299.13-299.28" id="_witness_.check_cover_ternary_gemm_stream_formal_v_299_105" tracefile="engine_0/trace4.vcd">
+</testcase>
+<testcase classname="default" name="Property COVER in ternary_gemm_stream_formal at ternary_gemm_stream_formal.v:302.13-302.41" time="0" type="COVER" location="ternary_gemm_stream_formal.v:302.13-302.41" id="_witness_.check_cover_ternary_gemm_stream_formal_v_302_106" tracefile="engine_0/trace4.vcd">
+</testcase>
+<testcase classname="default" name="Property COVER in ternary_gemm_stream_formal at ternary_gemm_stream_formal.v:305.13-305.57" time="0" type="COVER" location="ternary_gemm_stream_formal.v:305.13-305.57" id="_witness_.check_cover_ternary_gemm_stream_formal_v_305_109" tracefile="engine_0/trace2.vcd">
+</testcase>
+<testcase classname="default" name="Property COVER in ternary_gemm_stream_formal at ternary_gemm_stream_formal.v:308.13-308.47" time="0" type="COVER" location="ternary_gemm_stream_formal.v:308.13-308.47" id="_witness_.check_cover_ternary_gemm_stream_formal_v_308_112" tracefile="engine_0/trace5.vcd">
+</testcase>
+<testcase classname="default" name="Property COVER in ternary_gemm_stream_formal at ternary_gemm_stream_formal.v:311.13-311.35" time="0" type="COVER" location="ternary_gemm_stream_formal.v:311.13-311.35" id="_witness_.check_cover_ternary_gemm_stream_formal_v_311_115" tracefile="engine_0/trace3.vcd">
+</testcase>
+<testcase classname="default" name="Property ASSERT in ternary_gemm_stream_formal at ternary_dot.v:109.13-109.46" time="0" type="ASSERT" location="ternary_dot.v:109.13-109.46" id="_witness_.check_flatten_dut__gemm_i__dot_gen_0__dot_i__assert_ternary_dot_v_109_143">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in ternary_gemm_stream_formal at ternary_dot.v:120.13-120.30" time="0" type="ASSERT" location="ternary_dot.v:120.13-120.30" id="_witness_.check_flatten_dut__gemm_i__dot_gen_0__dot_i__assert_ternary_dot_v_120_152">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in ternary_gemm_stream_formal at ternary_dot.v:126.13-126.32" time="0" type="ASSERT" location="ternary_dot.v:126.13-126.32" id="_witness_.check_flatten_dut__gemm_i__dot_gen_0__dot_i__assert_ternary_dot_v_126_155">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in ternary_gemm_stream_formal at ternary_dot.v:130.13-130.40" time="0" type="ASSERT" location="ternary_dot.v:130.13-130.40" id="_witness_.check_flatten_dut__gemm_i__dot_gen_0__dot_i__assert_ternary_dot_v_130_158">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in ternary_gemm_stream_formal at ternary_dot.v:94.13-94.35" time="0" type="ASSERT" location="ternary_dot.v:94.13-94.35" id="_witness_.check_flatten_dut__gemm_i__dot_gen_0__dot_i__assert_ternary_dot_v_94_135">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in ternary_gemm_stream_formal at ternary_dot.v:98.13-98.40" time="0" type="ASSERT" location="ternary_dot.v:98.13-98.40" id="_witness_.check_flatten_dut__gemm_i__dot_gen_0__dot_i__assert_ternary_dot_v_98_138">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in ternary_gemm_stream_formal at ternary_dot.v:109.13-109.46" time="0" type="ASSERT" location="ternary_dot.v:109.13-109.46" id="_witness_.check_flatten_dut__gemm_i__dot_gen_1__dot_i__assert_ternary_dot_v_109_143">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in ternary_gemm_stream_formal at ternary_dot.v:120.13-120.30" time="0" type="ASSERT" location="ternary_dot.v:120.13-120.30" id="_witness_.check_flatten_dut__gemm_i__dot_gen_1__dot_i__assert_ternary_dot_v_120_152">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in ternary_gemm_stream_formal at ternary_dot.v:126.13-126.32" time="0" type="ASSERT" location="ternary_dot.v:126.13-126.32" id="_witness_.check_flatten_dut__gemm_i__dot_gen_1__dot_i__assert_ternary_dot_v_126_155">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in ternary_gemm_stream_formal at ternary_dot.v:130.13-130.40" time="0" type="ASSERT" location="ternary_dot.v:130.13-130.40" id="_witness_.check_flatten_dut__gemm_i__dot_gen_1__dot_i__assert_ternary_dot_v_130_158">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in ternary_gemm_stream_formal at ternary_dot.v:94.13-94.35" time="0" type="ASSERT" location="ternary_dot.v:94.13-94.35" id="_witness_.check_flatten_dut__gemm_i__dot_gen_1__dot_i__assert_ternary_dot_v_94_135">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property ASSERT in ternary_gemm_stream_formal at ternary_dot.v:98.13-98.40" time="0" type="ASSERT" location="ternary_dot.v:98.13-98.40" id="_witness_.check_flatten_dut__gemm_i__dot_gen_1__dot_i__assert_ternary_dot_v_98_138">
+<skipped />
+</testcase>
+<system-out>SBY 17:50:25 [ternary_gemm_stream] Removing directory '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/ternary_gemm_stream'.
+SBY 17:50:25 [ternary_gemm_stream] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/../rtl/ternary_defines.vh' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/ternary_gemm_stream/src/ternary_defines.vh'.
+SBY 17:50:25 [ternary_gemm_stream] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/../rtl/ternary_gemm.v' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/ternary_gemm_stream/src/ternary_gemm.v'.
+SBY 17:50:25 [ternary_gemm_stream] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/../rtl/ternary_dot.v' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/ternary_gemm_stream/src/ternary_dot.v'.
+SBY 17:50:25 [ternary_gemm_stream] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/../rtl/ternary_gemm_stream.v' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/ternary_gemm_stream/src/ternary_gemm_stream.v'.
+SBY 17:50:25 [ternary_gemm_stream] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/ternary_gemm_stream_formal.v' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/ternary_gemm_stream/src/ternary_gemm_stream_formal.v'.
+SBY 17:50:25 [ternary_gemm_stream] engine_0: smtbmc
+SBY 17:50:25 [ternary_gemm_stream] base: starting process &quot;cd ternary_gemm_stream/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 17:50:25 [ternary_gemm_stream] base: Warning: Wire ternary_gemm_stream_formal.\dut_act_data [7] is used but has no driver.
+SBY 17:50:25 [ternary_gemm_stream] base: Warning: Wire ternary_gemm_stream_formal.\dut_act_data [6] is used but has no driver.
+SBY 17:50:25 [ternary_gemm_stream] base: Warning: Wire ternary_gemm_stream_formal.\dut_act_data [5] is used but has no driver.
+SBY 17:50:25 [ternary_gemm_stream] base: Warning: Wire ternary_gemm_stream_formal.\dut_act_data [4] is used but has no driver.
+SBY 17:50:25 [ternary_gemm_stream] base: Warning: Wire ternary_gemm_stream_formal.\dut_act_data [3] is used but has no driver.
+SBY 17:50:25 [ternary_gemm_stream] base: Warning: Wire ternary_gemm_stream_formal.\dut_act_data [2] is used but has no driver.
+SBY 17:50:25 [ternary_gemm_stream] base: Warning: Wire ternary_gemm_stream_formal.\dut_act_data [1] is used but has no driver.
+SBY 17:50:25 [ternary_gemm_stream] base: Warning: Wire ternary_gemm_stream_formal.\dut_act_data [0] is used but has no driver.
+SBY 17:50:25 [ternary_gemm_stream] base: Warning: Wire ternary_gemm_stream_formal.\dut_w_data [3] is used but has no driver.
+SBY 17:50:25 [ternary_gemm_stream] base: Warning: Wire ternary_gemm_stream_formal.\dut_w_data [2] is used but has no driver.
+SBY 17:50:25 [ternary_gemm_stream] base: Warning: Wire ternary_gemm_stream_formal.\dut_w_data [1] is used but has no driver.
+SBY 17:50:25 [ternary_gemm_stream] base: Warning: Wire ternary_gemm_stream_formal.\dut_w_data [0] is used but has no driver.
+SBY 17:50:25 [ternary_gemm_stream] base: finished (returncode=0)
+SBY 17:50:25 [ternary_gemm_stream] prep: starting process &quot;cd ternary_gemm_stream/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 17:50:25 [ternary_gemm_stream] prep: Warning: Wire ternary_gemm_stream_formal.\dut.gemm_i.dot_gen[1].dot_i.weight_enc [1] is used but has no driver.
+SBY 17:50:25 [ternary_gemm_stream] prep: Warning: Wire ternary_gemm_stream_formal.\dut.gemm_i.dot_gen[1].dot_i.weight_enc [0] is used but has no driver.
+SBY 17:50:25 [ternary_gemm_stream] prep: Warning: Wire ternary_gemm_stream_formal.\dut.gemm_i.dot_gen[0].dot_i.weight_enc [1] is used but has no driver.
+SBY 17:50:25 [ternary_gemm_stream] prep: Warning: Wire ternary_gemm_stream_formal.\dut.gemm_i.dot_gen[0].dot_i.weight_enc [0] is used but has no driver.
+SBY 17:50:25 [ternary_gemm_stream] prep: Warning: Wire ternary_gemm_stream_formal.\dut.gemm_i.dot_gen[0].dot_i.activation [7] is used but has no driver.
+SBY 17:50:25 [ternary_gemm_stream] prep: Warning: Wire ternary_gemm_stream_formal.\dut.gemm_i.dot_gen[0].dot_i.activation [6] is used but has no driver.
+SBY 17:50:25 [ternary_gemm_stream] prep: Warning: Wire ternary_gemm_stream_formal.\dut.gemm_i.dot_gen[0].dot_i.activation [5] is used but has no driver.
+SBY 17:50:25 [ternary_gemm_stream] prep: Warning: Wire ternary_gemm_stream_formal.\dut.gemm_i.dot_gen[0].dot_i.activation [4] is used but has no driver.
+SBY 17:50:25 [ternary_gemm_stream] prep: Warning: Wire ternary_gemm_stream_formal.\dut.gemm_i.dot_gen[0].dot_i.activation [3] is used but has no driver.
+SBY 17:50:25 [ternary_gemm_stream] prep: Warning: Wire ternary_gemm_stream_formal.\dut.gemm_i.dot_gen[0].dot_i.activation [2] is used but has no driver.
+SBY 17:50:25 [ternary_gemm_stream] prep: Warning: Wire ternary_gemm_stream_formal.\dut.gemm_i.dot_gen[0].dot_i.activation [1] is used but has no driver.
+SBY 17:50:25 [ternary_gemm_stream] prep: Warning: Wire ternary_gemm_stream_formal.\dut.gemm_i.dot_gen[0].dot_i.activation [0] is used but has no driver.
+SBY 17:50:25 [ternary_gemm_stream] prep: finished (returncode=0)
+SBY 17:50:25 [ternary_gemm_stream] smt2: starting process &quot;cd ternary_gemm_stream/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 17:50:25 [ternary_gemm_stream] smt2: finished (returncode=0)
+SBY 17:50:25 [ternary_gemm_stream] engine_0: starting process &quot;cd ternary_gemm_stream; yosys-smtbmc --presat --unroll -c --noprogress -t 40  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2&quot;
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Solver: yices
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 2..
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Reached cover statement in step 3 at ternary_gemm_stream_formal: ternary_gemm_stream_formal.v:291.13-291.39 (_witness_.check_cover_ternary_gemm_stream_formal_v_291_97)
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 6..
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Reached cover statement in step 6 at ternary_gemm_stream_formal: ternary_gemm_stream_formal.v:292.13-292.39 (_witness_.check_cover_ternary_gemm_stream_formal_v_292_99)
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace1.vcd
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace1_tb.v
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace1.smtc
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace1.yw
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 6..
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 7..
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 8..
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Reached cover statement in step 8 at ternary_gemm_stream_formal: ternary_gemm_stream_formal.v:305.13-305.57 (_witness_.check_cover_ternary_gemm_stream_formal_v_305_109)
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace2.vcd
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace2_tb.v
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace2.smtc
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace2.yw
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 8..
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 9..
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 10..
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Reached cover statement in step 10 at ternary_gemm_stream_formal: ternary_gemm_stream_formal.v:311.13-311.35 (_witness_.check_cover_ternary_gemm_stream_formal_v_311_115)
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace3.vcd
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace3_tb.v
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace3.smtc
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace3.yw
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 10..
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 11..
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Reached cover statement in step 11 at ternary_gemm_stream_formal: ternary_gemm_stream_formal.v:299.13-299.28 (_witness_.check_cover_ternary_gemm_stream_formal_v_299_105)
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Reached cover statement in step 11 at ternary_gemm_stream_formal: ternary_gemm_stream_formal.v:302.13-302.41 (_witness_.check_cover_ternary_gemm_stream_formal_v_302_106)
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace4.vcd
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace4_tb.v
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace4.smtc
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace4.yw
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 11..
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Reached cover statement in step 11 at ternary_gemm_stream_formal: ternary_gemm_stream_formal.v:308.13-308.47 (_witness_.check_cover_ternary_gemm_stream_formal_v_308_112)
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace5.vcd
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace5_tb.v
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace5.smtc
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace5.yw
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 11..
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 12..
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 13..
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 14..
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 15..
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 16..
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 17..
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 18..
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 19..
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 20..
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Reached cover statement in step 20 at ternary_gemm_stream_formal: ternary_gemm_stream_formal.v:293.13-293.39 (_witness_.check_cover_ternary_gemm_stream_formal_v_293_101)
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace6.vcd
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace6_tb.v
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace6.smtc
+SBY 17:50:25 [ternary_gemm_stream] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace6.yw
+SBY 17:50:26 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 20..
+SBY 17:50:26 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 21..
+SBY 17:50:26 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 22..
+SBY 17:50:26 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 23..
+SBY 17:50:26 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 24..
+SBY 17:50:26 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 25..
+SBY 17:50:26 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 26..
+SBY 17:50:26 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 27..
+SBY 17:50:26 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 28..
+SBY 17:50:26 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 29..
+SBY 17:50:26 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 30..
+SBY 17:50:26 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 31..
+SBY 17:50:26 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 32..
+SBY 17:50:26 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 33..
+SBY 17:50:26 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 34..
+SBY 17:50:26 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 35..
+SBY 17:50:26 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 36..
+SBY 17:50:26 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 37..
+SBY 17:50:26 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 38..
+SBY 17:50:26 [ternary_gemm_stream] engine_0: ##   0:00:00  Checking cover reachability in step 39..
+SBY 17:50:26 [ternary_gemm_stream] engine_0: ##   0:00:00  Unreached cover statement at ternary_gemm_stream_formal: ternary_gemm_stream_formal.v:296.13-296.41 (_witness_.check_cover_ternary_gemm_stream_formal_v_296_103)
+SBY 17:50:26 [ternary_gemm_stream] engine_0: ##   0:00:00  Status: failed
+SBY 17:50:26 [ternary_gemm_stream] engine_0: finished (returncode=1)
+SBY 17:50:26 [ternary_gemm_stream] engine_0: Status returned by engine: FAIL
+SBY 17:50:26 [ternary_gemm_stream] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 17:50:26 [ternary_gemm_stream] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 17:50:26 [ternary_gemm_stream] summary: engine_0 (smtbmc) returned FAIL
+SBY 17:50:26 [ternary_gemm_stream] summary: cover trace: ternary_gemm_stream/engine_0/trace0.vcd
+SBY 17:50:26 [ternary_gemm_stream] summary:   reached cover statement ternary_gemm_stream_formal._witness_.check_cover_ternary_gemm_stream_formal_v_291_97 at ternary_gemm_stream_formal.v:291.13-291.39 step 3
+SBY 17:50:26 [ternary_gemm_stream] summary: cover trace: ternary_gemm_stream/engine_0/trace1.vcd
+SBY 17:50:26 [ternary_gemm_stream] summary:   reached cover statement ternary_gemm_stream_formal._witness_.check_cover_ternary_gemm_stream_formal_v_292_99 at ternary_gemm_stream_formal.v:292.13-292.39 step 6
+SBY 17:50:26 [ternary_gemm_stream] summary: cover trace: ternary_gemm_stream/engine_0/trace2.vcd
+SBY 17:50:26 [ternary_gemm_stream] summary:   reached cover statement ternary_gemm_stream_formal._witness_.check_cover_ternary_gemm_stream_formal_v_305_109 at ternary_gemm_stream_formal.v:305.13-305.57 step 8
+SBY 17:50:26 [ternary_gemm_stream] summary: cover trace: ternary_gemm_stream/engine_0/trace3.vcd
+SBY 17:50:26 [ternary_gemm_stream] summary:   reached cover statement ternary_gemm_stream_formal._witness_.check_cover_ternary_gemm_stream_formal_v_311_115 at ternary_gemm_stream_formal.v:311.13-311.35 step 10
+SBY 17:50:26 [ternary_gemm_stream] summary: cover trace: ternary_gemm_stream/engine_0/trace4.vcd
+SBY 17:50:26 [ternary_gemm_stream] summary:   reached cover statement ternary_gemm_stream_formal._witness_.check_cover_ternary_gemm_stream_formal_v_299_105 at ternary_gemm_stream_formal.v:299.13-299.28 step 11
+SBY 17:50:26 [ternary_gemm_stream] summary:   reached cover statement ternary_gemm_stream_formal._witness_.check_cover_ternary_gemm_stream_formal_v_302_106 at ternary_gemm_stream_formal.v:302.13-302.41 step 11
+SBY 17:50:26 [ternary_gemm_stream] summary: and 2 further traces
+SBY 17:50:26 [ternary_gemm_stream] summary: unreached cover statements:
+SBY 17:50:26 [ternary_gemm_stream] summary:   ternary_gemm_stream_formal._witness_.check_cover_ternary_gemm_stream_formal_v_296_103 at ternary_gemm_stream_formal.v:296.13-296.41
+SBY 17:50:26 [ternary_gemm_stream] summary: see ternary_gemm_stream/FAIL for a complete summary
+SBY 17:50:26 [ternary_gemm_stream] DONE (FAIL, rc=2)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

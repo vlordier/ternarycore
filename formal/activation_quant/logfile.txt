@@ -1,0 +1,48 @@
+SBY 23:59:02 [activation_quant] Removing directory '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/activation_quant'.
+SBY 23:59:02 [activation_quant] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/../rtl/activation_quant.v' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/activation_quant/src/activation_quant.v'.
+SBY 23:59:02 [activation_quant] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/activation_quant_formal.v' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/activation_quant/src/activation_quant_formal.v'.
+SBY 23:59:02 [activation_quant] engine_0: smtbmc
+SBY 23:59:02 [activation_quant] base: starting process "cd activation_quant/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 23:59:02 [activation_quant] base: finished (returncode=0)
+SBY 23:59:02 [activation_quant] prep: starting process "cd activation_quant/model; yosys -ql design_prep.log design_prep.ys"
+SBY 23:59:02 [activation_quant] prep: finished (returncode=0)
+SBY 23:59:02 [activation_quant] smt2: starting process "cd activation_quant/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 23:59:02 [activation_quant] smt2: finished (returncode=0)
+SBY 23:59:02 [activation_quant] engine_0: starting process "cd activation_quant; yosys-smtbmc --presat --unroll -c --noprogress -t 20  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2"
+SBY 23:59:03 [activation_quant] engine_0: ##   0:00:00  Solver: yices
+SBY 23:59:03 [activation_quant] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 23:59:03 [activation_quant] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY 23:59:03 [activation_quant] engine_0: ##   0:00:00  Checking cover reachability in step 2..
+SBY 23:59:03 [activation_quant] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 23:59:03 [activation_quant] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 23:59:03 [activation_quant] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY 23:59:03 [activation_quant] engine_0: ##   0:00:00  Reached cover statement in step 5 at activation_quant_formal: activation_quant_formal.v:99.13-99.29 (_witness_.check_cover_activation_quant_formal_v_99_30)
+SBY 23:59:03 [activation_quant] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+SBY 23:59:03 [activation_quant] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+SBY 23:59:03 [activation_quant] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+SBY 23:59:03 [activation_quant] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+SBY 23:59:03 [activation_quant] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY 23:59:03 [activation_quant] engine_0: ##   0:00:00  Reached cover statement in step 5 at activation_quant_formal: activation_quant_formal.v:100.13-100.39 (_witness_.check_cover_activation_quant_formal_v_100_31)
+SBY 23:59:03 [activation_quant] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace1.vcd
+SBY 23:59:03 [activation_quant] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace1_tb.v
+SBY 23:59:03 [activation_quant] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace1.smtc
+SBY 23:59:03 [activation_quant] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace1.yw
+SBY 23:59:03 [activation_quant] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY 23:59:03 [activation_quant] engine_0: ##   0:00:00  Reached cover statement in step 5 at activation_quant_formal: activation_quant_formal.v:101.13-101.41 (_witness_.check_cover_activation_quant_formal_v_101_34)
+SBY 23:59:03 [activation_quant] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace2.vcd
+SBY 23:59:03 [activation_quant] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace2_tb.v
+SBY 23:59:03 [activation_quant] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace2.smtc
+SBY 23:59:03 [activation_quant] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace2.yw
+SBY 23:59:03 [activation_quant] engine_0: ##   0:00:00  Status: passed
+SBY 23:59:03 [activation_quant] engine_0: finished (returncode=0)
+SBY 23:59:03 [activation_quant] engine_0: Status returned by engine: pass
+SBY 23:59:03 [activation_quant] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 23:59:03 [activation_quant] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 23:59:03 [activation_quant] summary: engine_0 (smtbmc) returned pass
+SBY 23:59:03 [activation_quant] summary: cover trace: activation_quant/engine_0/trace0.vcd
+SBY 23:59:03 [activation_quant] summary:   reached cover statement activation_quant_formal._witness_.check_cover_activation_quant_formal_v_99_30 at activation_quant_formal.v:99.13-99.29 step 5
+SBY 23:59:03 [activation_quant] summary: cover trace: activation_quant/engine_0/trace1.vcd
+SBY 23:59:03 [activation_quant] summary:   reached cover statement activation_quant_formal._witness_.check_cover_activation_quant_formal_v_100_31 at activation_quant_formal.v:100.13-100.39 step 5
+SBY 23:59:03 [activation_quant] summary: cover trace: activation_quant/engine_0/trace2.vcd
+SBY 23:59:03 [activation_quant] summary:   reached cover statement activation_quant_formal._witness_.check_cover_activation_quant_formal_v_101_34 at activation_quant_formal.v:101.13-101.41 step 5
+SBY 23:59:03 [activation_quant] DONE (PASS, rc=0)

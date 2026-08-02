@@ -1,0 +1,18 @@
+Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+engine_0 (smtbmc) returned pass
+cover trace: engine_0/trace0.vcd
+cover trace: engine_0/trace0.yw
+  reached cover statement ternary_mac_formal._witness_.check_cover_ternary_mac_formal_v_86_41 at ternary_mac_formal.v:86.13-86.29 step 7
+cover trace: engine_0/trace1.vcd
+cover trace: engine_0/trace1.yw
+  reached cover statement ternary_mac_formal._witness_.check_cover_ternary_mac_formal_v_83_32 at ternary_mac_formal.v:83.13-83.51 step 7
+cover trace: engine_0/trace2.vcd
+cover trace: engine_0/trace2.yw
+  reached cover statement ternary_mac_formal._witness_.check_cover_ternary_mac_formal_v_85_38 at ternary_mac_formal.v:85.13-85.51 step 7
+cover trace: engine_0/trace3.vcd
+cover trace: engine_0/trace3.yw
+  reached cover statement ternary_mac_formal._witness_.check_cover_ternary_mac_formal_v_84_35 at ternary_mac_formal.v:84.13-84.51 step 7
+cover trace: engine_0/trace4.vcd
+cover trace: engine_0/trace4.yw
+  reached cover statement ternary_mac_formal._witness_.check_cover_ternary_mac_formal_v_87_43 at ternary_mac_formal.v:87.13-87.29 step 7

@@ -1,0 +1,22 @@
+SBY 23:59:09 [fp8_to_q15_corner_prove] Removing directory '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/fp8_to_q15_corner_prove'.
+SBY 23:59:09 [fp8_to_q15_corner_prove] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/../rtl/fp8_to_q15.v' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/fp8_to_q15_corner_prove/src/fp8_to_q15.v'.
+SBY 23:59:09 [fp8_to_q15_corner_prove] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/fp8_to_q15_corner_formal.v' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/fp8_to_q15_corner_prove/src/fp8_to_q15_corner_formal.v'.
+SBY 23:59:09 [fp8_to_q15_corner_prove] engine_0: smtbmc
+SBY 23:59:09 [fp8_to_q15_corner_prove] base: starting process "cd fp8_to_q15_corner_prove/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 23:59:09 [fp8_to_q15_corner_prove] base: finished (returncode=0)
+SBY 23:59:09 [fp8_to_q15_corner_prove] prep: starting process "cd fp8_to_q15_corner_prove/model; yosys -ql design_prep.log design_prep.ys"
+SBY 23:59:09 [fp8_to_q15_corner_prove] prep: finished (returncode=0)
+SBY 23:59:09 [fp8_to_q15_corner_prove] smt2: starting process "cd fp8_to_q15_corner_prove/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 23:59:09 [fp8_to_q15_corner_prove] smt2: finished (returncode=0)
+SBY 23:59:09 [fp8_to_q15_corner_prove] engine_0: starting process "cd fp8_to_q15_corner_prove; yosys-smtbmc --presat --unroll --noprogress -t 1  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 23:59:09 [fp8_to_q15_corner_prove] engine_0: ##   0:00:00  Solver: yices
+SBY 23:59:09 [fp8_to_q15_corner_prove] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 23:59:09 [fp8_to_q15_corner_prove] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 23:59:09 [fp8_to_q15_corner_prove] engine_0: ##   0:00:00  Status: passed
+SBY 23:59:09 [fp8_to_q15_corner_prove] engine_0: finished (returncode=0)
+SBY 23:59:09 [fp8_to_q15_corner_prove] engine_0: Status returned by engine: pass
+SBY 23:59:09 [fp8_to_q15_corner_prove] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 23:59:09 [fp8_to_q15_corner_prove] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 23:59:09 [fp8_to_q15_corner_prove] summary: engine_0 (smtbmc) returned pass
+SBY 23:59:09 [fp8_to_q15_corner_prove] summary: engine_0 did not produce any traces
+SBY 23:59:09 [fp8_to_q15_corner_prove] DONE (PASS, rc=0)

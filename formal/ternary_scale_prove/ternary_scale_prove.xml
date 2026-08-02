@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-08-02T23:59:15" hostname="macadam2-2.local" package="ternary_scale_prove" id="0" name="default" tests="10" errors="0" failures="0" time="0" skipped="4">
+<properties>
+<property name="os" value="Darwin"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="default" name="build execution" time="0">
+</testcase>
+<testcase classname="default" name="Property ASSERT in ternary_scale_formal at ternary_scale_formal.v:110.13-110.38" time="0" type="ASSERT" location="ternary_scale_formal.v:110.13-110.38" id="_witness_.check_assert_ternary_scale_formal_v_110_46">
+</testcase>
+<testcase classname="default" name="Property ASSERT in ternary_scale_formal at ternary_scale_formal.v:112.17-112.45" time="0" type="ASSERT" location="ternary_scale_formal.v:112.17-112.45" id="_witness_.check_assert_ternary_scale_formal_v_112_48">
+</testcase>
+<testcase classname="default" name="Property ASSERT in ternary_scale_formal at ternary_scale_formal.v:139.13-139.58" time="0" type="ASSERT" location="ternary_scale_formal.v:139.13-139.58" id="_witness_.check_assert_ternary_scale_formal_v_139_51">
+</testcase>
+<testcase classname="default" name="Property ASSERT in ternary_scale_formal at ternary_scale_formal.v:140.13-140.58" time="0" type="ASSERT" location="ternary_scale_formal.v:140.13-140.58" id="_witness_.check_assert_ternary_scale_formal_v_140_54">
+</testcase>
+<testcase classname="default" name="Property ASSERT in ternary_scale_formal at ternary_scale_formal.v:141.13-141.58" time="0" type="ASSERT" location="ternary_scale_formal.v:141.13-141.58" id="_witness_.check_assert_ternary_scale_formal_v_141_57">
+</testcase>
+<testcase classname="default" name="Property ASSERT in ternary_scale_formal at ternary_scale_formal.v:142.13-142.58" time="0" type="ASSERT" location="ternary_scale_formal.v:142.13-142.58" id="_witness_.check_assert_ternary_scale_formal_v_142_60">
+</testcase>
+<testcase classname="default" name="Property COVER in ternary_scale_formal at ternary_scale_formal.v:149.13-149.29" time="0" type="COVER" location="ternary_scale_formal.v:149.13-149.29" id="_witness_.check_cover_ternary_scale_formal_v_149_65">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property COVER in ternary_scale_formal at ternary_scale_formal.v:150.13-150.41" time="0" type="COVER" location="ternary_scale_formal.v:150.13-150.41" id="_witness_.check_cover_ternary_scale_formal_v_150_66">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property COVER in ternary_scale_formal at ternary_scale_formal.v:151.13-151.40" time="0" type="COVER" location="ternary_scale_formal.v:151.13-151.40" id="_witness_.check_cover_ternary_scale_formal_v_151_69">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property COVER in ternary_scale_formal at ternary_scale_formal.v:152.13-152.40" time="0" type="COVER" location="ternary_scale_formal.v:152.13-152.40" id="_witness_.check_cover_ternary_scale_formal_v_152_72">
+<skipped />
+</testcase>
+<system-out>SBY 23:59:14 [ternary_scale_prove] Removing directory '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/ternary_scale_prove'.
+SBY 23:59:14 [ternary_scale_prove] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/../rtl/ternary_scale.v' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/ternary_scale_prove/src/ternary_scale.v'.
+SBY 23:59:14 [ternary_scale_prove] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/ternary_scale_formal.v' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/ternary_scale_prove/src/ternary_scale_formal.v'.
+SBY 23:59:14 [ternary_scale_prove] engine_0: smtbmc
+SBY 23:59:14 [ternary_scale_prove] base: starting process &quot;cd ternary_scale_prove/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 23:59:14 [ternary_scale_prove] base: Warning: Replacing memory \prod with list of registers. See ternary_scale.v:30
+SBY 23:59:14 [ternary_scale_prove] base: finished (returncode=0)
+SBY 23:59:14 [ternary_scale_prove] prep: starting process &quot;cd ternary_scale_prove/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 23:59:14 [ternary_scale_prove] prep: finished (returncode=0)
+SBY 23:59:14 [ternary_scale_prove] smt2: starting process &quot;cd ternary_scale_prove/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 23:59:14 [ternary_scale_prove] smt2: finished (returncode=0)
+SBY 23:59:14 [ternary_scale_prove] engine_0: starting process &quot;cd ternary_scale_prove; yosys-smtbmc --presat --unroll --noprogress -t 10  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY 23:59:14 [ternary_scale_prove] engine_0: ##   0:00:00  Solver: yices
+SBY 23:59:14 [ternary_scale_prove] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 23:59:14 [ternary_scale_prove] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 23:59:14 [ternary_scale_prove] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 23:59:14 [ternary_scale_prove] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 23:59:14 [ternary_scale_prove] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 23:59:14 [ternary_scale_prove] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 23:59:14 [ternary_scale_prove] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 23:59:14 [ternary_scale_prove] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 23:59:14 [ternary_scale_prove] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY 23:59:14 [ternary_scale_prove] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY 23:59:14 [ternary_scale_prove] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY 23:59:14 [ternary_scale_prove] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY 23:59:14 [ternary_scale_prove] engine_0: ##   0:00:00  Checking assumptions in step 6..
+SBY 23:59:14 [ternary_scale_prove] engine_0: ##   0:00:00  Checking assertions in step 6..
+SBY 23:59:14 [ternary_scale_prove] engine_0: ##   0:00:00  Checking assumptions in step 7..
+SBY 23:59:14 [ternary_scale_prove] engine_0: ##   0:00:00  Checking assertions in step 7..
+SBY 23:59:14 [ternary_scale_prove] engine_0: ##   0:00:00  Checking assumptions in step 8..
+SBY 23:59:14 [ternary_scale_prove] engine_0: ##   0:00:00  Checking assertions in step 8..
+SBY 23:59:15 [ternary_scale_prove] engine_0: ##   0:00:00  Checking assumptions in step 9..
+SBY 23:59:15 [ternary_scale_prove] engine_0: ##   0:00:00  Checking assertions in step 9..
+SBY 23:59:15 [ternary_scale_prove] engine_0: ##   0:00:00  Status: passed
+SBY 23:59:15 [ternary_scale_prove] engine_0: finished (returncode=0)
+SBY 23:59:15 [ternary_scale_prove] engine_0: Status returned by engine: pass
+SBY 23:59:15 [ternary_scale_prove] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 23:59:15 [ternary_scale_prove] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 23:59:15 [ternary_scale_prove] summary: engine_0 (smtbmc) returned pass
+SBY 23:59:15 [ternary_scale_prove] summary: engine_0 did not produce any traces
+SBY 23:59:15 [ternary_scale_prove] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

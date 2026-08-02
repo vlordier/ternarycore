@@ -1,0 +1,13 @@
+Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+engine_0 (smtbmc) returned pass
+cover trace: engine_0/trace0.vcd
+cover trace: engine_0/trace0.yw
+  reached cover statement int8_gemm_formal._witness_.check_cover_int8_gemm_formal_v_136_49 at int8_gemm_formal.v:136.13-136.29 step 11
+cover trace: engine_0/trace1.vcd
+cover trace: engine_0/trace1.yw
+  reached cover statement int8_gemm_formal._witness_.check_cover_int8_gemm_formal_v_137_50 at int8_gemm_formal.v:137.13-137.71 step 11
+  reached cover statement int8_gemm_formal._witness_.check_cover_int8_gemm_formal_v_138_53 at int8_gemm_formal.v:138.13-138.79 step 11
+cover trace: engine_0/trace2.vcd
+cover trace: engine_0/trace2.yw
+  reached cover statement int8_gemm_formal._witness_.check_cover_int8_gemm_formal_v_139_56 at int8_gemm_formal.v:139.13-139.79 step 11

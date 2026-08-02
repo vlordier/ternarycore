@@ -1,0 +1,51 @@
+SBY 23:59:15 [ternary_scale] Removing directory '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/ternary_scale'.
+SBY 23:59:15 [ternary_scale] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/../rtl/ternary_scale.v' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/ternary_scale/src/ternary_scale.v'.
+SBY 23:59:15 [ternary_scale] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/ternary_scale_formal.v' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/ternary_scale/src/ternary_scale_formal.v'.
+SBY 23:59:15 [ternary_scale] engine_0: smtbmc
+SBY 23:59:15 [ternary_scale] base: starting process "cd ternary_scale/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 23:59:15 [ternary_scale] base: Warning: Replacing memory \prod with list of registers. See ternary_scale.v:30
+SBY 23:59:15 [ternary_scale] base: finished (returncode=0)
+SBY 23:59:15 [ternary_scale] prep: starting process "cd ternary_scale/model; yosys -ql design_prep.log design_prep.ys"
+SBY 23:59:15 [ternary_scale] prep: finished (returncode=0)
+SBY 23:59:15 [ternary_scale] smt2: starting process "cd ternary_scale/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 23:59:15 [ternary_scale] smt2: finished (returncode=0)
+SBY 23:59:15 [ternary_scale] engine_0: starting process "cd ternary_scale; yosys-smtbmc --presat --unroll -c --noprogress -t 20  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2"
+SBY 23:59:15 [ternary_scale] engine_0: ##   0:00:00  Solver: yices
+SBY 23:59:15 [ternary_scale] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 23:59:15 [ternary_scale] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY 23:59:15 [ternary_scale] engine_0: ##   0:00:00  Checking cover reachability in step 2..
+SBY 23:59:15 [ternary_scale] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 23:59:15 [ternary_scale] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 23:59:15 [ternary_scale] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY 23:59:15 [ternary_scale] engine_0: ##   0:00:00  Reached cover statement in step 5 at ternary_scale_formal: ternary_scale_formal.v:149.13-149.29 (_witness_.check_cover_ternary_scale_formal_v_149_65)
+SBY 23:59:15 [ternary_scale] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+SBY 23:59:15 [ternary_scale] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+SBY 23:59:15 [ternary_scale] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+SBY 23:59:15 [ternary_scale] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+SBY 23:59:15 [ternary_scale] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY 23:59:15 [ternary_scale] engine_0: ##   0:00:00  Reached cover statement in step 5 at ternary_scale_formal: ternary_scale_formal.v:150.13-150.41 (_witness_.check_cover_ternary_scale_formal_v_150_66)
+SBY 23:59:15 [ternary_scale] engine_0: ##   0:00:00  Reached cover statement in step 5 at ternary_scale_formal: ternary_scale_formal.v:152.13-152.40 (_witness_.check_cover_ternary_scale_formal_v_152_72)
+SBY 23:59:15 [ternary_scale] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace1.vcd
+SBY 23:59:15 [ternary_scale] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace1_tb.v
+SBY 23:59:15 [ternary_scale] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace1.smtc
+SBY 23:59:15 [ternary_scale] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace1.yw
+SBY 23:59:15 [ternary_scale] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY 23:59:15 [ternary_scale] engine_0: ##   0:00:00  Reached cover statement in step 5 at ternary_scale_formal: ternary_scale_formal.v:151.13-151.40 (_witness_.check_cover_ternary_scale_formal_v_151_69)
+SBY 23:59:15 [ternary_scale] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace2.vcd
+SBY 23:59:15 [ternary_scale] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace2_tb.v
+SBY 23:59:15 [ternary_scale] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace2.smtc
+SBY 23:59:15 [ternary_scale] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace2.yw
+SBY 23:59:15 [ternary_scale] engine_0: ##   0:00:00  Status: passed
+SBY 23:59:15 [ternary_scale] engine_0: finished (returncode=0)
+SBY 23:59:15 [ternary_scale] engine_0: Status returned by engine: pass
+SBY 23:59:15 [ternary_scale] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 23:59:15 [ternary_scale] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 23:59:15 [ternary_scale] summary: engine_0 (smtbmc) returned pass
+SBY 23:59:15 [ternary_scale] summary: cover trace: ternary_scale/engine_0/trace0.vcd
+SBY 23:59:15 [ternary_scale] summary:   reached cover statement ternary_scale_formal._witness_.check_cover_ternary_scale_formal_v_149_65 at ternary_scale_formal.v:149.13-149.29 step 5
+SBY 23:59:15 [ternary_scale] summary: cover trace: ternary_scale/engine_0/trace1.vcd
+SBY 23:59:15 [ternary_scale] summary:   reached cover statement ternary_scale_formal._witness_.check_cover_ternary_scale_formal_v_150_66 at ternary_scale_formal.v:150.13-150.41 step 5
+SBY 23:59:15 [ternary_scale] summary:   reached cover statement ternary_scale_formal._witness_.check_cover_ternary_scale_formal_v_152_72 at ternary_scale_formal.v:152.13-152.40 step 5
+SBY 23:59:15 [ternary_scale] summary: cover trace: ternary_scale/engine_0/trace2.vcd
+SBY 23:59:15 [ternary_scale] summary:   reached cover statement ternary_scale_formal._witness_.check_cover_ternary_scale_formal_v_151_69 at ternary_scale_formal.v:151.13-151.40 step 5
+SBY 23:59:15 [ternary_scale] DONE (PASS, rc=0)

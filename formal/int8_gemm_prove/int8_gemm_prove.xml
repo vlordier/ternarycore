@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-08-02T23:59:10" hostname="macadam2-2.local" package="int8_gemm_prove" id="0" name="default" tests="8" errors="0" failures="0" time="0" skipped="4">
+<properties>
+<property name="os" value="Darwin"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="default" name="build execution" time="0">
+</testcase>
+<testcase classname="default" name="Property ASSERT in int8_gemm_formal at int8_gemm_formal.v:109.13-109.42" time="0" type="ASSERT" location="int8_gemm_formal.v:109.13-109.42" id="_witness_.check_assert_int8_gemm_formal_v_109_38">
+</testcase>
+<testcase classname="default" name="Property ASSERT in int8_gemm_formal at int8_gemm_formal.v:117.21-117.81" time="0" type="ASSERT" location="int8_gemm_formal.v:117.21-117.81" id="_witness_.check_assert_int8_gemm_formal_v_117_62">
+</testcase>
+<testcase classname="default" name="Property ASSERT in int8_gemm_formal at int8_gemm_formal.v:117.21-117.81" time="0" type="ASSERT" location="int8_gemm_formal.v:117.21-117.81" id="_witness_.check_assert_int8_gemm_formal_v_117_67">
+</testcase>
+<testcase classname="default" name="Property ASSERT in int8_gemm_formal at int8_gemm_formal.v:130.13-130.42" time="0" type="ASSERT" location="int8_gemm_formal.v:130.13-130.42" id="_witness_.check_assert_int8_gemm_formal_v_130_44">
+</testcase>
+<testcase classname="default" name="Property COVER in int8_gemm_formal at int8_gemm_formal.v:136.13-136.29" time="0" type="COVER" location="int8_gemm_formal.v:136.13-136.29" id="_witness_.check_cover_int8_gemm_formal_v_136_49">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property COVER in int8_gemm_formal at int8_gemm_formal.v:137.13-137.71" time="0" type="COVER" location="int8_gemm_formal.v:137.13-137.71" id="_witness_.check_cover_int8_gemm_formal_v_137_50">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property COVER in int8_gemm_formal at int8_gemm_formal.v:138.13-138.79" time="0" type="COVER" location="int8_gemm_formal.v:138.13-138.79" id="_witness_.check_cover_int8_gemm_formal_v_138_53">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property COVER in int8_gemm_formal at int8_gemm_formal.v:139.13-139.79" time="0" type="COVER" location="int8_gemm_formal.v:139.13-139.79" id="_witness_.check_cover_int8_gemm_formal_v_139_56">
+<skipped />
+</testcase>
+<system-out>SBY 23:59:10 [int8_gemm_prove] Removing directory '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/int8_gemm_prove'.
+SBY 23:59:10 [int8_gemm_prove] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/../rtl/ternary_defines.vh' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/int8_gemm_prove/src/ternary_defines.vh'.
+SBY 23:59:10 [int8_gemm_prove] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/../rtl/int8_gemm.v' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/int8_gemm_prove/src/int8_gemm.v'.
+SBY 23:59:10 [int8_gemm_prove] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/../rtl/int8_dot.v' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/int8_gemm_prove/src/int8_dot.v'.
+SBY 23:59:10 [int8_gemm_prove] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/int8_gemm_formal.v' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/int8_gemm_prove/src/int8_gemm_formal.v'.
+SBY 23:59:10 [int8_gemm_prove] engine_0: smtbmc
+SBY 23:59:10 [int8_gemm_prove] base: starting process &quot;cd int8_gemm_prove/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 23:59:10 [int8_gemm_prove] base: Warning: Replacing memory \ref_result with list of registers. See int8_gemm_formal.v:84
+SBY 23:59:10 [int8_gemm_prove] base: Warning: Replacing memory \dot_acc with list of registers. See int8_gemm_formal.v:83
+SBY 23:59:10 [int8_gemm_prove] base: Warning: Wire int8_gemm_formal.\weight [7] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] base: Warning: Wire int8_gemm_formal.\weight [6] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] base: Warning: Wire int8_gemm_formal.\weight [5] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] base: Warning: Wire int8_gemm_formal.\weight [4] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] base: Warning: Wire int8_gemm_formal.\weight [3] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] base: Warning: Wire int8_gemm_formal.\weight [2] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] base: Warning: Wire int8_gemm_formal.\weight [1] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] base: Warning: Wire int8_gemm_formal.\weight [0] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] base: Warning: Wire int8_gemm_formal.\activation [7] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] base: Warning: Wire int8_gemm_formal.\activation [6] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] base: Warning: Wire int8_gemm_formal.\activation [5] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] base: Warning: Wire int8_gemm_formal.\activation [4] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] base: Warning: Wire int8_gemm_formal.\activation [3] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] base: Warning: Wire int8_gemm_formal.\activation [2] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] base: Warning: Wire int8_gemm_formal.\activation [1] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] base: Warning: Wire int8_gemm_formal.\activation [0] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] base: Warning: Wire int8_gemm_formal.\weight [15] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] base: Warning: Wire int8_gemm_formal.\weight [14] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] base: Warning: Wire int8_gemm_formal.\weight [13] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] base: Warning: Wire int8_gemm_formal.\weight [12] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] base: Warning: Wire int8_gemm_formal.\weight [11] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] base: Warning: Wire int8_gemm_formal.\weight [10] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] base: Warning: Wire int8_gemm_formal.\weight [9] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] base: Warning: Wire int8_gemm_formal.\weight [8] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] base: Warning: Wire int8_gemm_formal.\valid_in is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] base: Warning: Wire int8_gemm_formal.\rst_n is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] base: finished (returncode=0)
+SBY 23:59:10 [int8_gemm_prove] prep: starting process &quot;cd int8_gemm_prove/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 23:59:10 [int8_gemm_prove] prep: Warning: Wire int8_gemm_formal.\weight [15] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] prep: Warning: Wire int8_gemm_formal.\weight [14] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] prep: Warning: Wire int8_gemm_formal.\weight [13] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] prep: Warning: Wire int8_gemm_formal.\weight [12] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] prep: Warning: Wire int8_gemm_formal.\weight [11] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] prep: Warning: Wire int8_gemm_formal.\weight [10] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] prep: Warning: Wire int8_gemm_formal.\weight [9] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] prep: Warning: Wire int8_gemm_formal.\weight [8] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] prep: Warning: Wire int8_gemm_formal.\weight [7] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] prep: Warning: Wire int8_gemm_formal.\weight [6] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] prep: Warning: Wire int8_gemm_formal.\weight [5] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] prep: Warning: Wire int8_gemm_formal.\weight [4] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] prep: Warning: Wire int8_gemm_formal.\weight [3] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] prep: Warning: Wire int8_gemm_formal.\weight [2] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] prep: Warning: Wire int8_gemm_formal.\weight [1] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] prep: Warning: Wire int8_gemm_formal.\weight [0] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] prep: Warning: Wire int8_gemm_formal.\activation [7] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] prep: Warning: Wire int8_gemm_formal.\activation [6] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] prep: Warning: Wire int8_gemm_formal.\activation [5] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] prep: Warning: Wire int8_gemm_formal.\activation [4] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] prep: Warning: Wire int8_gemm_formal.\activation [3] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] prep: Warning: Wire int8_gemm_formal.\activation [2] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] prep: Warning: Wire int8_gemm_formal.\activation [1] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] prep: Warning: Wire int8_gemm_formal.\activation [0] is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] prep: Warning: Wire int8_gemm_formal.\valid_in is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] prep: Warning: Wire int8_gemm_formal.\rst_n is used but has no driver.
+SBY 23:59:10 [int8_gemm_prove] prep: finished (returncode=0)
+SBY 23:59:10 [int8_gemm_prove] smt2: starting process &quot;cd int8_gemm_prove/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 23:59:10 [int8_gemm_prove] smt2: finished (returncode=0)
+SBY 23:59:10 [int8_gemm_prove] engine_0: starting process &quot;cd int8_gemm_prove; yosys-smtbmc --presat --unroll --noprogress -t 8  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY 23:59:10 [int8_gemm_prove] engine_0: ##   0:00:00  Solver: yices
+SBY 23:59:10 [int8_gemm_prove] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 23:59:10 [int8_gemm_prove] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 23:59:10 [int8_gemm_prove] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 23:59:10 [int8_gemm_prove] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 23:59:10 [int8_gemm_prove] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 23:59:10 [int8_gemm_prove] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 23:59:10 [int8_gemm_prove] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 23:59:10 [int8_gemm_prove] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 23:59:10 [int8_gemm_prove] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY 23:59:10 [int8_gemm_prove] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY 23:59:10 [int8_gemm_prove] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY 23:59:10 [int8_gemm_prove] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY 23:59:10 [int8_gemm_prove] engine_0: ##   0:00:00  Checking assumptions in step 6..
+SBY 23:59:10 [int8_gemm_prove] engine_0: ##   0:00:00  Checking assertions in step 6..
+SBY 23:59:10 [int8_gemm_prove] engine_0: ##   0:00:00  Checking assumptions in step 7..
+SBY 23:59:10 [int8_gemm_prove] engine_0: ##   0:00:00  Checking assertions in step 7..
+SBY 23:59:10 [int8_gemm_prove] engine_0: ##   0:00:00  Status: passed
+SBY 23:59:10 [int8_gemm_prove] engine_0: finished (returncode=0)
+SBY 23:59:10 [int8_gemm_prove] engine_0: Status returned by engine: pass
+SBY 23:59:10 [int8_gemm_prove] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 23:59:10 [int8_gemm_prove] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 23:59:10 [int8_gemm_prove] summary: engine_0 (smtbmc) returned pass
+SBY 23:59:10 [int8_gemm_prove] summary: engine_0 did not produce any traces
+SBY 23:59:10 [int8_gemm_prove] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

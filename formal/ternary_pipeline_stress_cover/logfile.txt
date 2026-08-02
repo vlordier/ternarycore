@@ -1,0 +1,74 @@
+SBY 16:51:40 [ternary_pipeline_stress_cover] Removing directory '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/ternary_pipeline_stress_cover'.
+SBY 16:51:40 [ternary_pipeline_stress_cover] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/../rtl/activation_quant.v' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/ternary_pipeline_stress_cover/src/activation_quant.v'.
+SBY 16:51:40 [ternary_pipeline_stress_cover] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/../rtl/ternary_dot.v' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/ternary_pipeline_stress_cover/src/ternary_dot.v'.
+SBY 16:51:40 [ternary_pipeline_stress_cover] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/../rtl/ternary_defines.vh' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/ternary_pipeline_stress_cover/src/ternary_defines.vh'.
+SBY 16:51:40 [ternary_pipeline_stress_cover] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/../rtl/ternary_gemm.v' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/ternary_pipeline_stress_cover/src/ternary_gemm.v'.
+SBY 16:51:40 [ternary_pipeline_stress_cover] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/../rtl/ternary_scale.v' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/ternary_pipeline_stress_cover/src/ternary_scale.v'.
+SBY 16:51:40 [ternary_pipeline_stress_cover] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/../rtl/ternary_pipeline.v' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/ternary_pipeline_stress_cover/src/ternary_pipeline.v'.
+SBY 16:51:40 [ternary_pipeline_stress_cover] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/ternary_pipeline_stress_formal.v' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/ternary_pipeline_stress_cover/src/ternary_pipeline_stress_formal.v'.
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: smtbmc
+SBY 16:51:40 [ternary_pipeline_stress_cover] base: starting process "cd ternary_pipeline_stress_cover/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 16:51:40 [ternary_pipeline_stress_cover] base: Warning: Replacing memory \s_prod with list of registers. See ternary_pipeline_stress_formal.v:204
+SBY 16:51:40 [ternary_pipeline_stress_cover] base: Warning: Replacing memory \pwin with list of registers. See ternary_pipeline_stress_formal.v:152
+SBY 16:51:40 [ternary_pipeline_stress_cover] base: Warning: Replacing memory \acc_sum with list of registers. See ternary_pipeline_stress_formal.v:150
+SBY 16:51:40 [ternary_pipeline_stress_cover] base: Warning: Replacing memory \psum with list of registers. See ternary_pipeline_stress_formal.v:149
+SBY 16:51:40 [ternary_pipeline_stress_cover] base: Warning: Replacing memory \prod with list of registers. See ternary_scale.v:30
+SBY 16:51:40 [ternary_pipeline_stress_cover] base: finished (returncode=0)
+SBY 16:51:40 [ternary_pipeline_stress_cover] prep: starting process "cd ternary_pipeline_stress_cover/model; yosys -ql design_prep.log design_prep.ys"
+SBY 16:51:40 [ternary_pipeline_stress_cover] prep: finished (returncode=0)
+SBY 16:51:40 [ternary_pipeline_stress_cover] smt2: starting process "cd ternary_pipeline_stress_cover/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 16:51:40 [ternary_pipeline_stress_cover] smt2: finished (returncode=0)
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: starting process "cd ternary_pipeline_stress_cover; yosys-smtbmc --presat --unroll -c --noprogress -t 20  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2"
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Solver: yices
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Checking cover reachability in step 2..
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Checking cover reachability in step 6..
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Checking cover reachability in step 7..
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Reached cover statement in step 7 at ternary_pipeline_stress_formal: ternary_pipeline_stress_formal.v:262.13-262.37 (_witness_.check_cover_ternary_pipeline_stress_formal_v_262_200)
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Checking cover reachability in step 7..
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Checking cover reachability in step 8..
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Checking cover reachability in step 9..
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Checking cover reachability in step 10..
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Checking cover reachability in step 11..
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Reached cover statement in step 11 at ternary_pipeline_stress_formal: ternary_pipeline_stress_formal.v:258.13-258.29 (_witness_.check_cover_ternary_pipeline_stress_formal_v_258_190)
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace1.vcd
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace1_tb.v
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace1.smtc
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace1.yw
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Checking cover reachability in step 11..
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Reached cover statement in step 11 at ternary_pipeline_stress_formal: ternary_pipeline_stress_formal.v:259.13-259.72 (_witness_.check_cover_ternary_pipeline_stress_formal_v_259_191)
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Reached cover statement in step 11 at ternary_pipeline_stress_formal: ternary_pipeline_stress_formal.v:260.13-260.72 (_witness_.check_cover_ternary_pipeline_stress_formal_v_260_194)
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace2.vcd
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace2_tb.v
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace2.smtc
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace2.yw
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Checking cover reachability in step 11..
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Reached cover statement in step 11 at ternary_pipeline_stress_formal: ternary_pipeline_stress_formal.v:261.13-261.80 (_witness_.check_cover_ternary_pipeline_stress_formal_v_261_197)
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace3.vcd
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace3_tb.v
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace3.smtc
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace3.yw
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: ##   0:00:00  Status: passed
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: finished (returncode=0)
+SBY 16:51:40 [ternary_pipeline_stress_cover] engine_0: Status returned by engine: pass
+SBY 16:51:40 [ternary_pipeline_stress_cover] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 16:51:40 [ternary_pipeline_stress_cover] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 16:51:40 [ternary_pipeline_stress_cover] summary: engine_0 (smtbmc) returned pass
+SBY 16:51:40 [ternary_pipeline_stress_cover] summary: cover trace: ternary_pipeline_stress_cover/engine_0/trace0.vcd
+SBY 16:51:40 [ternary_pipeline_stress_cover] summary:   reached cover statement ternary_pipeline_stress_formal._witness_.check_cover_ternary_pipeline_stress_formal_v_262_200 at ternary_pipeline_stress_formal.v:262.13-262.37 step 7
+SBY 16:51:40 [ternary_pipeline_stress_cover] summary: cover trace: ternary_pipeline_stress_cover/engine_0/trace1.vcd
+SBY 16:51:40 [ternary_pipeline_stress_cover] summary:   reached cover statement ternary_pipeline_stress_formal._witness_.check_cover_ternary_pipeline_stress_formal_v_258_190 at ternary_pipeline_stress_formal.v:258.13-258.29 step 11
+SBY 16:51:40 [ternary_pipeline_stress_cover] summary: cover trace: ternary_pipeline_stress_cover/engine_0/trace2.vcd
+SBY 16:51:40 [ternary_pipeline_stress_cover] summary:   reached cover statement ternary_pipeline_stress_formal._witness_.check_cover_ternary_pipeline_stress_formal_v_259_191 at ternary_pipeline_stress_formal.v:259.13-259.72 step 11
+SBY 16:51:40 [ternary_pipeline_stress_cover] summary:   reached cover statement ternary_pipeline_stress_formal._witness_.check_cover_ternary_pipeline_stress_formal_v_260_194 at ternary_pipeline_stress_formal.v:260.13-260.72 step 11
+SBY 16:51:40 [ternary_pipeline_stress_cover] summary: cover trace: ternary_pipeline_stress_cover/engine_0/trace3.vcd
+SBY 16:51:40 [ternary_pipeline_stress_cover] summary:   reached cover statement ternary_pipeline_stress_formal._witness_.check_cover_ternary_pipeline_stress_formal_v_261_197 at ternary_pipeline_stress_formal.v:261.13-261.80 step 11
+SBY 16:51:40 [ternary_pipeline_stress_cover] DONE (PASS, rc=0)

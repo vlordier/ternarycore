@@ -1,0 +1,51 @@
+initial
+assume (= [$auto$async2sync.cc:107:execute$357] false)
+assume (= [$auto$async2sync.cc:116:execute$355] true)
+assume (= [$auto$async2sync.cc:116:execute$361] true)
+assume (= [$auto$async2sync.cc:116:execute$367] true)
+assume (= [$auto$async2sync.cc:116:execute$373] true)
+assume (= [dut._witness_.anyinit_procdff_179] #b00000000000000000000000000000000)
+assume (= [dut._witness_.anyinit_procdff_184] false)
+assume (= [dut._witness_.anyinit_procdff_189] false)
+assume (= [dut._witness_.anyinit_procdff_194] #b00000000)
+assume (= [dut._witness_.anyinit_procdff_199] #b00)
+assume (= [dut._witness_.anyinit_procdff_204] #b00000000000000000000000000000000)
+assume (= [dut._witness_.anyinit_procdff_209] false)
+assume (= [dut._witness_.anyinit_procdff_228] #b00000000000000000000000000000000)
+assume (= [dut._witness_.anyinit_procdff_233] #b0000000000000000)
+assume (= [dut._witness_.anyinit_procdff_238] false)
+assume (= [dut._witness_.anyinit_procdff_243] #b00000000000000000000000000000000)
+assume (= [dut._witness_.anyinit_procdff_255] false)
+assume (= [dut._witness_.anyinit_procdff_260] #b00000000)
+assume (= [dut._witness_.anyinit_procdff_265] #b00)
+assume (= [dut._witness_.anyinit_procdff_270] #b00000000000000000000000000000000)
+assume (= [dut._witness_.anyinit_procdff_275] false)
+assume (= [reset_cnt] #b00)
+assume (= [run_cnt] #b0000)
+
+state 0
+assume (= [clk] false)
+
+state 1
+assume (= [clk] false)
+
+state 2
+assume (= [clk] false)
+
+state 3
+assume (= [clk] false)
+
+state 4
+assume (= [clk] false)
+
+state 5
+assume (= [clk] false)
+
+state 6
+assume (= [clk] false)
+
+state 7
+assume (= [clk] false)
+
+state 8
+assume (= [clk] false)

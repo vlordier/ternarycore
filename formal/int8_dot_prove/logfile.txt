@@ -1,0 +1,77 @@
+SBY 23:59:10 [int8_dot_prove] Removing directory '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/int8_dot_prove'.
+SBY 23:59:10 [int8_dot_prove] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/../rtl/int8_dot.v' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/int8_dot_prove/src/int8_dot.v'.
+SBY 23:59:10 [int8_dot_prove] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/../rtl/ternary_defines.vh' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/int8_dot_prove/src/ternary_defines.vh'.
+SBY 23:59:10 [int8_dot_prove] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/int8_dot_formal.v' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/int8_dot_prove/src/int8_dot_formal.v'.
+SBY 23:59:10 [int8_dot_prove] engine_0: smtbmc
+SBY 23:59:10 [int8_dot_prove] base: starting process "cd int8_dot_prove/src; yosys -ql ../model/design.log ../model/design.ys"
+SBY 23:59:10 [int8_dot_prove] base: Warning: Wire int8_dot_formal.\activation [7] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] base: Warning: Wire int8_dot_formal.\activation [6] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] base: Warning: Wire int8_dot_formal.\activation [5] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] base: Warning: Wire int8_dot_formal.\activation [4] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] base: Warning: Wire int8_dot_formal.\activation [3] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] base: Warning: Wire int8_dot_formal.\activation [2] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] base: Warning: Wire int8_dot_formal.\activation [1] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] base: Warning: Wire int8_dot_formal.\activation [0] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] base: Warning: Wire int8_dot_formal.\weight [7] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] base: Warning: Wire int8_dot_formal.\weight [6] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] base: Warning: Wire int8_dot_formal.\weight [5] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] base: Warning: Wire int8_dot_formal.\weight [4] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] base: Warning: Wire int8_dot_formal.\weight [3] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] base: Warning: Wire int8_dot_formal.\weight [2] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] base: Warning: Wire int8_dot_formal.\weight [1] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] base: Warning: Wire int8_dot_formal.\weight [0] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] base: Warning: Wire int8_dot_formal.\valid_in is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] base: Warning: Wire int8_dot_formal.\rst_n is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] base: finished (returncode=0)
+SBY 23:59:10 [int8_dot_prove] prep: starting process "cd int8_dot_prove/model; yosys -ql design_prep.log design_prep.ys"
+SBY 23:59:10 [int8_dot_prove] prep: Warning: Wire int8_dot_formal.\weight [7] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] prep: Warning: Wire int8_dot_formal.\weight [6] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] prep: Warning: Wire int8_dot_formal.\weight [5] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] prep: Warning: Wire int8_dot_formal.\weight [4] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] prep: Warning: Wire int8_dot_formal.\weight [3] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] prep: Warning: Wire int8_dot_formal.\weight [2] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] prep: Warning: Wire int8_dot_formal.\weight [1] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] prep: Warning: Wire int8_dot_formal.\weight [0] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] prep: Warning: Wire int8_dot_formal.\activation [7] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] prep: Warning: Wire int8_dot_formal.\activation [6] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] prep: Warning: Wire int8_dot_formal.\activation [5] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] prep: Warning: Wire int8_dot_formal.\activation [4] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] prep: Warning: Wire int8_dot_formal.\activation [3] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] prep: Warning: Wire int8_dot_formal.\activation [2] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] prep: Warning: Wire int8_dot_formal.\activation [1] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] prep: Warning: Wire int8_dot_formal.\activation [0] is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] prep: Warning: Wire int8_dot_formal.\rst_n is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] prep: Warning: Wire int8_dot_formal.\valid_in is used but has no driver.
+SBY 23:59:10 [int8_dot_prove] prep: finished (returncode=0)
+SBY 23:59:10 [int8_dot_prove] smt2: starting process "cd int8_dot_prove/model; yosys -ql design_smt2.log design_smt2.ys"
+SBY 23:59:10 [int8_dot_prove] smt2: finished (returncode=0)
+SBY 23:59:10 [int8_dot_prove] engine_0: starting process "cd int8_dot_prove; yosys-smtbmc --presat --unroll --noprogress -t 10  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2"
+SBY 23:59:10 [int8_dot_prove] engine_0: ##   0:00:00  Solver: yices
+SBY 23:59:10 [int8_dot_prove] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 23:59:10 [int8_dot_prove] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 23:59:10 [int8_dot_prove] engine_0: ##   0:00:00  Checking assumptions in step 1..
+SBY 23:59:10 [int8_dot_prove] engine_0: ##   0:00:00  Checking assertions in step 1..
+SBY 23:59:10 [int8_dot_prove] engine_0: ##   0:00:00  Checking assumptions in step 2..
+SBY 23:59:10 [int8_dot_prove] engine_0: ##   0:00:00  Checking assertions in step 2..
+SBY 23:59:10 [int8_dot_prove] engine_0: ##   0:00:00  Checking assumptions in step 3..
+SBY 23:59:10 [int8_dot_prove] engine_0: ##   0:00:00  Checking assertions in step 3..
+SBY 23:59:10 [int8_dot_prove] engine_0: ##   0:00:00  Checking assumptions in step 4..
+SBY 23:59:10 [int8_dot_prove] engine_0: ##   0:00:00  Checking assertions in step 4..
+SBY 23:59:10 [int8_dot_prove] engine_0: ##   0:00:00  Checking assumptions in step 5..
+SBY 23:59:10 [int8_dot_prove] engine_0: ##   0:00:00  Checking assertions in step 5..
+SBY 23:59:10 [int8_dot_prove] engine_0: ##   0:00:00  Checking assumptions in step 6..
+SBY 23:59:10 [int8_dot_prove] engine_0: ##   0:00:00  Checking assertions in step 6..
+SBY 23:59:10 [int8_dot_prove] engine_0: ##   0:00:00  Checking assumptions in step 7..
+SBY 23:59:10 [int8_dot_prove] engine_0: ##   0:00:00  Checking assertions in step 7..
+SBY 23:59:10 [int8_dot_prove] engine_0: ##   0:00:00  Checking assumptions in step 8..
+SBY 23:59:10 [int8_dot_prove] engine_0: ##   0:00:00  Checking assertions in step 8..
+SBY 23:59:10 [int8_dot_prove] engine_0: ##   0:00:00  Checking assumptions in step 9..
+SBY 23:59:10 [int8_dot_prove] engine_0: ##   0:00:00  Checking assertions in step 9..
+SBY 23:59:10 [int8_dot_prove] engine_0: ##   0:00:00  Status: passed
+SBY 23:59:10 [int8_dot_prove] engine_0: finished (returncode=0)
+SBY 23:59:10 [int8_dot_prove] engine_0: Status returned by engine: pass
+SBY 23:59:10 [int8_dot_prove] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 23:59:10 [int8_dot_prove] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 23:59:10 [int8_dot_prove] summary: engine_0 (smtbmc) returned pass
+SBY 23:59:10 [int8_dot_prove] summary: engine_0 did not produce any traces
+SBY 23:59:10 [int8_dot_prove] DONE (PASS, rc=0)

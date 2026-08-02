@@ -1,0 +1,16 @@
+# running in ternary_pipeline/src/
+read -formal activation_quant.v
+read -formal ternary_dot.v
+read -formal ternary_gemm.v
+read -formal ternary_scale.v
+read -formal ternary_pipeline.v
+read -formal ternary_pipeline_formal.v
+setattr -unset keep *
+setattr -unset dont_touch *
+setattr -unset mark_debug *
+prep -top ternary_pipeline_formal
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

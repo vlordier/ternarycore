@@ -1,0 +1,63 @@
+initial
+assume (= [$auto$async2sync.cc:107:execute$785] false)
+assume (= [$auto$async2sync.cc:116:execute$765] true)
+assume (= [$auto$async2sync.cc:116:execute$771] true)
+assume (= [$auto$async2sync.cc:116:execute$777] true)
+assume (= [$auto$async2sync.cc:116:execute$783] true)
+assume (= [$auto$async2sync.cc:116:execute$789] true)
+assume (= [$auto$async2sync.cc:116:execute$795] true)
+assume (= [$auto$async2sync.cc:116:execute$801] true)
+assume (= [$auto$async2sync.cc:116:execute$807] true)
+assume (= [$auto$async2sync.cc:116:execute$813] true)
+assume (= [_witness_.anyinit_auto_ff_cc_337_slice_606] #b00000000000000000000000000000000)
+assume (= [_witness_.anyinit_auto_ff_cc_337_slice_609] #b00000000000000000000000000000000)
+assume (= [_witness_.anyinit_auto_ff_cc_337_slice_610] #b0000000000000000)
+assume (= [_witness_.anyinit_auto_ff_cc_337_slice_613] #b00000000000000000000000000000000)
+assume (= [_witness_.anyinit_auto_ff_cc_337_slice_616] #b00000000000000000000000000000000)
+assume (= [_witness_.anyinit_auto_ff_cc_337_slice_617] #b0000000000000000)
+assume (= [_witness_.anyinit_auto_ff_cc_337_slice_618] false)
+assume (= [_witness_.anyinit_auto_ff_cc_337_slice_627] #b00)
+assume (= [_witness_.anyinit_auto_ff_cc_337_slice_636] #b0000)
+assume (= [_witness_.anyinit_auto_ff_cc_337_slice_645] false)
+assume (= [_witness_.anyinit_auto_ff_cc_337_slice_652] false)
+assume (= [_witness_.anyinit_auto_ff_cc_337_slice_655] #b0000)
+assume (= [_witness_.anyinit_auto_ff_cc_337_slice_664] #b0000000000000000000000000000000000000000000000000000000000000000)
+assume (= [_witness_.anyinit_flatten_dut__gemm_i__dot_gen_0__dot_i__procdff_469] false)
+assume (= [_witness_.anyinit_flatten_dut__procdff_479] false)
+assume (= [_witness_.anyinit_flatten_dut__procdff_504] false)
+assume (= [addr_changed] false)
+assume (= [addr_count] #b00000000)
+assume (= [drv_state] #b00)
+assume (= [inferred_state] #b00)
+assume (= [prev_act_addr] #b100)
+assume (= [reset_cnt] #b00)
+assume (= [run_phase] false)
+assume (= [wait_phase] false)
+
+state 0
+assume (= [clk] false)
+assume (= [rst_n] false)
+
+state 1
+assume (= [clk] false)
+assume (= [rst_n] false)
+
+state 2
+assume (= [clk] false)
+assume (= [rst_n] true)
+
+state 3
+assume (= [clk] false)
+assume (= [rst_n] true)
+
+state 4
+assume (= [clk] false)
+assume (= [rst_n] true)
+
+state 5
+assume (= [clk] false)
+assume (= [rst_n] true)
+
+state 6
+assume (= [clk] false)
+assume (= [rst_n] true)

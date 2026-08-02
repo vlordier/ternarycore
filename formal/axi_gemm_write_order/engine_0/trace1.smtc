@@ -1,0 +1,145 @@
+initial
+assume (= [$auto$async2sync.cc:107:execute$1322] false)
+assume (= [$auto$async2sync.cc:116:execute$1320] true)
+assume (= [$auto$async2sync.cc:116:execute$1326] true)
+assume (= [$auto$async2sync.cc:116:execute$1332] true)
+assume (= [dut._witness_.anyinit_procdff_622] #b00000000000000000000000000000000)
+assume (= [dut._witness_.anyinit_procdff_647] false)
+assume (= [dut._witness_.anyinit_procdff_652] #b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000)
+assume (= [dut._witness_.anyinit_procdff_657] false)
+assume (= [dut._witness_.anyinit_procdff_662] false)
+assume (= [dut._witness_.anyinit_procdff_667] false)
+assume (= [dut._witness_.anyinit_procdff_672] false)
+assume (= [dut._witness_.anyinit_procdff_677] false)
+assume (= [dut._witness_.anyinit_procdff_682] false)
+assume (= [dut._witness_.anyinit_procdff_687] #b00000000)
+assume (= [dut._witness_.anyinit_procdff_692] #b00000000000000000000000000000000)
+assume (= [dut._witness_.anyinit_procdff_697] #b00000000000000000000000000000000)
+assume (= [dut._witness_.anyinit_procdff_702] false)
+assume (= [dut._witness_.anyinit_procdff_707] false)
+assume (= [dut._witness_.anyinit_procdff_712] false)
+assume (= [dut._witness_.anyinit_procdff_717] #b00000000)
+assume (= [dut.gemm_i.dot_0._witness_.anyinit_procdff_736] #b00000000000000000000000000000000)
+assume (= [dut.gemm_i.dot_0._witness_.anyinit_procdff_741] false)
+assume (= [dut.gemm_i.dot_0._witness_.anyinit_procdff_746] false)
+assume (= [dut.gemm_i.dot_0._witness_.anyinit_procdff_751] #b00000000)
+assume (= [dut.gemm_i.dot_0._witness_.anyinit_procdff_756] #b00)
+assume (= [dut.gemm_i.dot_0._witness_.anyinit_procdff_761] #b00000000000000000000000000000000)
+assume (= [dut.gemm_i.dot_0._witness_.anyinit_procdff_766] false)
+assume (= [dut.gemm_i.dot_0._witness_.anyinit_procdff_785] #b00000000000000000000000000000000)
+assume (= [dut.gemm_i.dot_0._witness_.anyinit_procdff_790] #b0000000000000000)
+assume (= [dut.gemm_i.dot_0._witness_.anyinit_procdff_795] false)
+assume (= [dut.gemm_i.dot_0._witness_.anyinit_procdff_800] #b00000000000000000000000000000000)
+assume (= [dut.gemm_i.dot_0._witness_.anyinit_procdff_812] false)
+assume (= [dut.gemm_i.dot_0._witness_.anyinit_procdff_817] #b00000000)
+assume (= [dut.gemm_i.dot_0._witness_.anyinit_procdff_822] #b00)
+assume (= [dut.gemm_i.dot_0._witness_.anyinit_procdff_827] #b00000000000000000000000000000000)
+assume (= [dut.gemm_i.dot_0._witness_.anyinit_procdff_832] false)
+assume (= [dut.gemm_i.dot_1._witness_.anyinit_procdff_837] #b00000000000000000000000000000000)
+assume (= [dut.gemm_i.dot_1._witness_.anyinit_procdff_842] false)
+assume (= [dut.gemm_i.dot_1._witness_.anyinit_procdff_847] false)
+assume (= [dut.gemm_i.dot_1._witness_.anyinit_procdff_852] #b00000000)
+assume (= [dut.gemm_i.dot_1._witness_.anyinit_procdff_857] #b00)
+assume (= [dut.gemm_i.dot_1._witness_.anyinit_procdff_862] #b00000000000000000000000000000000)
+assume (= [dut.gemm_i.dot_1._witness_.anyinit_procdff_867] false)
+assume (= [dut.gemm_i.dot_1._witness_.anyinit_procdff_886] #b00000000000000000000000000000000)
+assume (= [dut.gemm_i.dot_1._witness_.anyinit_procdff_891] #b0000000000000000)
+assume (= [dut.gemm_i.dot_1._witness_.anyinit_procdff_896] false)
+assume (= [dut.gemm_i.dot_1._witness_.anyinit_procdff_901] #b00000000000000000000000000000000)
+assume (= [dut.gemm_i.dot_1._witness_.anyinit_procdff_913] false)
+assume (= [dut.gemm_i.dot_1._witness_.anyinit_procdff_918] #b00000000)
+assume (= [dut.gemm_i.dot_1._witness_.anyinit_procdff_923] #b00)
+assume (= [dut.gemm_i.dot_1._witness_.anyinit_procdff_928] #b00000000000000000000000000000000)
+assume (= [dut.gemm_i.dot_1._witness_.anyinit_procdff_933] false)
+assume (= [dut.gemm_i.dot_2._witness_.anyinit_procdff_1002] #b00000000000000000000000000000000)
+assume (= [dut.gemm_i.dot_2._witness_.anyinit_procdff_1014] false)
+assume (= [dut.gemm_i.dot_2._witness_.anyinit_procdff_1019] #b00000000)
+assume (= [dut.gemm_i.dot_2._witness_.anyinit_procdff_1024] #b00)
+assume (= [dut.gemm_i.dot_2._witness_.anyinit_procdff_1029] #b00000000000000000000000000000000)
+assume (= [dut.gemm_i.dot_2._witness_.anyinit_procdff_1034] false)
+assume (= [dut.gemm_i.dot_2._witness_.anyinit_procdff_938] #b00000000000000000000000000000000)
+assume (= [dut.gemm_i.dot_2._witness_.anyinit_procdff_943] false)
+assume (= [dut.gemm_i.dot_2._witness_.anyinit_procdff_948] false)
+assume (= [dut.gemm_i.dot_2._witness_.anyinit_procdff_953] #b00000000)
+assume (= [dut.gemm_i.dot_2._witness_.anyinit_procdff_958] #b00)
+assume (= [dut.gemm_i.dot_2._witness_.anyinit_procdff_963] #b00000000000000000000000000000000)
+assume (= [dut.gemm_i.dot_2._witness_.anyinit_procdff_968] false)
+assume (= [dut.gemm_i.dot_2._witness_.anyinit_procdff_987] #b00000000000000000000000000000000)
+assume (= [dut.gemm_i.dot_2._witness_.anyinit_procdff_992] #b0000000000000000)
+assume (= [dut.gemm_i.dot_2._witness_.anyinit_procdff_997] false)
+assume (= [dut.gemm_i.dot_3._witness_.anyinit_procdff_1039] #b00000000000000000000000000000000)
+assume (= [dut.gemm_i.dot_3._witness_.anyinit_procdff_1044] false)
+assume (= [dut.gemm_i.dot_3._witness_.anyinit_procdff_1049] false)
+assume (= [dut.gemm_i.dot_3._witness_.anyinit_procdff_1054] #b00000000)
+assume (= [dut.gemm_i.dot_3._witness_.anyinit_procdff_1059] #b00)
+assume (= [dut.gemm_i.dot_3._witness_.anyinit_procdff_1064] #b00000000000000000000000000000000)
+assume (= [dut.gemm_i.dot_3._witness_.anyinit_procdff_1069] false)
+assume (= [dut.gemm_i.dot_3._witness_.anyinit_procdff_1088] #b00000000000000000000000000000000)
+assume (= [dut.gemm_i.dot_3._witness_.anyinit_procdff_1093] #b0000000000000000)
+assume (= [dut.gemm_i.dot_3._witness_.anyinit_procdff_1098] false)
+assume (= [dut.gemm_i.dot_3._witness_.anyinit_procdff_1103] #b00000000000000000000000000000000)
+assume (= [dut.gemm_i.dot_3._witness_.anyinit_procdff_1115] false)
+assume (= [dut.gemm_i.dot_3._witness_.anyinit_procdff_1120] #b00000000)
+assume (= [dut.gemm_i.dot_3._witness_.anyinit_procdff_1125] #b00)
+assume (= [dut.gemm_i.dot_3._witness_.anyinit_procdff_1130] #b00000000000000000000000000000000)
+assume (= [dut.gemm_i.dot_3._witness_.anyinit_procdff_1135] false)
+assume (= [reset_cnt] #b00)
+assume (= [s_axi_araddr] #b00000000)
+assume (= [s_axi_arvalid] false)
+assume (= [s_axi_awaddr] #b00000000)
+assume (= [s_axi_awvalid] false)
+assume (= [s_axi_bready] false)
+assume (= [s_axi_rready] false)
+assume (= [s_axi_wdata] #b00000000000000000000000000000000)
+assume (= [s_axi_wvalid] false)
+assume (= [state] #b000)
+assume (= [sub_state] #b00)
+assume (= [transaction_done] false)
+
+state 0
+assume (= [clk] false)
+
+state 1
+assume (= [clk] false)
+
+state 2
+assume (= [clk] false)
+
+state 3
+assume (= [clk] false)
+
+state 4
+assume (= [clk] false)
+
+state 5
+assume (= [clk] false)
+
+state 6
+assume (= [clk] false)
+
+state 7
+assume (= [clk] false)
+
+state 8
+assume (= [clk] false)
+
+state 9
+assume (= [clk] false)
+
+state 10
+assume (= [clk] false)
+
+state 11
+assume (= [clk] false)
+
+state 12
+assume (= [clk] false)
+
+state 13
+assume (= [clk] false)
+
+state 14
+assume (= [clk] false)
+
+state 15
+assume (= [clk] false)

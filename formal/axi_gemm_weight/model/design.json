@@ -1,0 +1,5200 @@
+{
+  "$schema": "https://raw.githubusercontent.com/YosysHQ/yosys/main/misc/jny.schema.json",
+  "generator": "Yosys 0.67+post (git sha1 b8e7da6f40ae8f552c116bf6c359b07c6533e159, Release, AppleClang clang++ 21.0.0.21000099)",
+  "version": "0.0.1",
+  "invocation": "write_jny -no-connections ../model/design.json ",
+  "features": ["attributes", "properties"],
+  "modules": [
+      {
+        "name": "$paramod$2b1c8065da0bee4a9a1dcaaec4555b2b6f268863\\ternary_dot",
+        "cell_sorts": [
+          {
+            "type": "$sub",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [16, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [16, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$sub$ternary_dot.v:113$201",
+                  "attributes": {
+                    "src": "ternary_dot.v:113.36-113.49"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000010000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000010000"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$adff",
+            "ports": [
+                {
+                  "name": "ARST",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "CLK",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procdff$1011",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$1016",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procdff$1021",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procdff$1026",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$1031",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$935",
+                  "attributes": {
+                    "src": "ternary_dot.v:147.5-155.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$940",
+                  "attributes": {
+                    "src": "ternary_dot.v:138.5-144.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$945",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$950",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procdff$955",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procdff$960",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$965",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$984",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$989",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0000000000000100",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000010000"
+                  }
+                },
+                {
+                  "name": "$procdff$994",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$999",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$ternary_dot.v:95$191",
+                  "attributes": {
+                    "src": "ternary_dot.v:95.27-95.46"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_not$ternary_dot.v:103$197",
+                  "attributes": {
+                    "src": "ternary_dot.v:103.31-103.43"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_and",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$logic_and$ternary_dot.v:103$199",
+                  "attributes": {
+                    "src": "ternary_dot.v:103.18-103.67"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [32, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procmux$631",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:150.22-150.33|ternary_dot.v:150.18-154.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$635",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:104.22-104.36|ternary_dot.v:104.18-114.21"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$637",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:103.18-103.67|ternary_dot.v:103.14-119.17"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$641",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:104.22-104.36|ternary_dot.v:104.18-114.21"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$643",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:103.18-103.67|ternary_dot.v:103.14-119.17"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$647",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:104.22-104.36|ternary_dot.v:104.18-114.21"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000010000"
+                  }
+                },
+                {
+                  "name": "$procmux$649",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:103.18-103.67|ternary_dot.v:103.14-119.17"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000010000"
+                  }
+                },
+                {
+                  "name": "$procmux$653",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:104.22-104.36|ternary_dot.v:104.18-114.21"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$655",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:103.18-103.67|ternary_dot.v:103.14-119.17"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$ternary$ternary_dot.v:95$195",
+                  "attributes": {
+                    "src": "ternary_dot.v:95.26-97.71"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$ternary$ternary_dot.v:96$194",
+                  "attributes": {
+                    "src": "ternary_dot.v:96.26-97.71"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$neg",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [8, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$neg$ternary_dot.v:97$193",
+                  "attributes": {
+                    "src": "ternary_dot.v:97.51-97.71"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "Y_WIDTH": "00000000000000000000000000001000"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_or",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$logic_or$ternary_dot.v:103$198",
+                  "attributes": {
+                    "src": "ternary_dot.v:103.31-103.66"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$eq",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [16, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$ternary_dot.v:104$200",
+                  "attributes": {
+                    "src": "ternary_dot.v:104.22-104.36"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000010000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$ternary_dot.v:96$192",
+                  "attributes": {
+                    "src": "ternary_dot.v:96.27-96.46"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$add",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [32, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$add$ternary_dot.v:99$196",
+                  "attributes": {
+                    "src": "ternary_dot.v:99.26-99.44"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000100000",
+                    "Y_WIDTH": "00000000000000000000000000100000"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "dynports": "00000000000000000000000000000001",
+            "hdlname": "ternary_dot",
+            "src": "ternary_dot.v:24.1-159.10"
+        }
+      },
+      {
+        "name": "$paramod$3eda9c714f7855805c9795b3f4969f9a8bec51f9\\ternary_dot",
+        "cell_sorts": [
+          {
+            "type": "$sub",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [16, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [16, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$sub$ternary_dot.v:113$218",
+                  "attributes": {
+                    "src": "ternary_dot.v:113.36-113.49"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000010000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000010000"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$adff",
+            "ports": [
+                {
+                  "name": "ARST",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "CLK",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [32, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procdff$834",
+                  "attributes": {
+                    "src": "ternary_dot.v:147.5-155.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$839",
+                  "attributes": {
+                    "src": "ternary_dot.v:138.5-144.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$844",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$849",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procdff$854",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procdff$859",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$864",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$883",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$888",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0000000000000100",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000010000"
+                  }
+                },
+                {
+                  "name": "$procdff$893",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$898",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$910",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$915",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procdff$920",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procdff$925",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$930",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [32, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procmux$604",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:150.22-150.33|ternary_dot.v:150.18-154.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$608",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:104.22-104.36|ternary_dot.v:104.18-114.21"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$610",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:103.18-103.67|ternary_dot.v:103.14-119.17"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$614",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:104.22-104.36|ternary_dot.v:104.18-114.21"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$616",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:103.18-103.67|ternary_dot.v:103.14-119.17"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$620",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:104.22-104.36|ternary_dot.v:104.18-114.21"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000010000"
+                  }
+                },
+                {
+                  "name": "$procmux$622",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:103.18-103.67|ternary_dot.v:103.14-119.17"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000010000"
+                  }
+                },
+                {
+                  "name": "$procmux$626",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:104.22-104.36|ternary_dot.v:104.18-114.21"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$628",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:103.18-103.67|ternary_dot.v:103.14-119.17"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$ternary$ternary_dot.v:95$212",
+                  "attributes": {
+                    "src": "ternary_dot.v:95.26-97.71"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$ternary$ternary_dot.v:96$211",
+                  "attributes": {
+                    "src": "ternary_dot.v:96.26-97.71"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$neg",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [8, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$neg$ternary_dot.v:97$210",
+                  "attributes": {
+                    "src": "ternary_dot.v:97.51-97.71"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "Y_WIDTH": "00000000000000000000000000001000"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_or",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$logic_or$ternary_dot.v:103$215",
+                  "attributes": {
+                    "src": "ternary_dot.v:103.31-103.66"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_and",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$logic_and$ternary_dot.v:103$216",
+                  "attributes": {
+                    "src": "ternary_dot.v:103.18-103.67"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$ternary_dot.v:95$208",
+                  "attributes": {
+                    "src": "ternary_dot.v:95.27-95.46"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_not$ternary_dot.v:103$214",
+                  "attributes": {
+                    "src": "ternary_dot.v:103.31-103.43"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$eq",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [16, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$ternary_dot.v:104$217",
+                  "attributes": {
+                    "src": "ternary_dot.v:104.22-104.36"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000010000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$ternary_dot.v:96$209",
+                  "attributes": {
+                    "src": "ternary_dot.v:96.27-96.46"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$add",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [32, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$add$ternary_dot.v:99$213",
+                  "attributes": {
+                    "src": "ternary_dot.v:99.26-99.44"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000100000",
+                    "Y_WIDTH": "00000000000000000000000000100000"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "dynports": "00000000000000000000000000000001",
+            "hdlname": "ternary_dot",
+            "src": "ternary_dot.v:24.1-159.10"
+        }
+      },
+      {
+        "name": "$paramod$3fa97d4567754c4530a7829aaca5633749f903f8\\ternary_dot",
+        "cell_sorts": [
+          {
+            "type": "$sub",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [16, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [16, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$sub$ternary_dot.v:113$184",
+                  "attributes": {
+                    "src": "ternary_dot.v:113.36-113.49"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000010000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000010000"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$adff",
+            "ports": [
+                {
+                  "name": "ARST",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "CLK",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [32, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procdff$1036",
+                  "attributes": {
+                    "src": "ternary_dot.v:147.5-155.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$1041",
+                  "attributes": {
+                    "src": "ternary_dot.v:138.5-144.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$1046",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$1051",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procdff$1056",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procdff$1061",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$1066",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$1085",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$1090",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0000000000000100",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000010000"
+                  }
+                },
+                {
+                  "name": "$procdff$1095",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$1100",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$1112",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$1117",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procdff$1122",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procdff$1127",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$1132",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [32, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procmux$658",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:150.22-150.33|ternary_dot.v:150.18-154.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$662",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:104.22-104.36|ternary_dot.v:104.18-114.21"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$664",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:103.18-103.67|ternary_dot.v:103.14-119.17"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$668",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:104.22-104.36|ternary_dot.v:104.18-114.21"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$670",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:103.18-103.67|ternary_dot.v:103.14-119.17"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$674",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:104.22-104.36|ternary_dot.v:104.18-114.21"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000010000"
+                  }
+                },
+                {
+                  "name": "$procmux$676",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:103.18-103.67|ternary_dot.v:103.14-119.17"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000010000"
+                  }
+                },
+                {
+                  "name": "$procmux$680",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:104.22-104.36|ternary_dot.v:104.18-114.21"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$682",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:103.18-103.67|ternary_dot.v:103.14-119.17"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$ternary$ternary_dot.v:95$178",
+                  "attributes": {
+                    "src": "ternary_dot.v:95.26-97.71"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$ternary$ternary_dot.v:96$177",
+                  "attributes": {
+                    "src": "ternary_dot.v:96.26-97.71"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$neg",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [8, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$neg$ternary_dot.v:97$176",
+                  "attributes": {
+                    "src": "ternary_dot.v:97.51-97.71"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "Y_WIDTH": "00000000000000000000000000001000"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_or",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$logic_or$ternary_dot.v:103$181",
+                  "attributes": {
+                    "src": "ternary_dot.v:103.31-103.66"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_and",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$logic_and$ternary_dot.v:103$182",
+                  "attributes": {
+                    "src": "ternary_dot.v:103.18-103.67"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$ternary_dot.v:95$174",
+                  "attributes": {
+                    "src": "ternary_dot.v:95.27-95.46"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_not$ternary_dot.v:103$180",
+                  "attributes": {
+                    "src": "ternary_dot.v:103.31-103.43"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$eq",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [16, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$ternary_dot.v:104$183",
+                  "attributes": {
+                    "src": "ternary_dot.v:104.22-104.36"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000010000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$ternary_dot.v:96$175",
+                  "attributes": {
+                    "src": "ternary_dot.v:96.27-96.46"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$add",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [32, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$add$ternary_dot.v:99$179",
+                  "attributes": {
+                    "src": "ternary_dot.v:99.26-99.44"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000100000",
+                    "Y_WIDTH": "00000000000000000000000000100000"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "dynports": "00000000000000000000000000000001",
+            "hdlname": "ternary_dot",
+            "src": "ternary_dot.v:24.1-159.10"
+        }
+      },
+      {
+        "name": "$paramod$68676d22c8ce292dac5f8c682b003132caa641a6\\axi_gemm_wrapper",
+        "cell_sorts": [
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [32, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procmux$306",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_wrapper.v:285.17-285.47|axi_gemm_wrapper.v:285.13-300.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$308",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:263.22-263.57|axi_gemm_wrapper.v:263.18-265.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$311",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_wrapper.v:261.22-261.39|axi_gemm_wrapper.v:261.18-265.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$313",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:252.22-252.39|axi_gemm_wrapper.v:252.18-254.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000001000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$316",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_wrapper.v:200.17-200.58|axi_gemm_wrapper.v:200.13-203.40"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$318",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:168.26-168.54|axi_gemm_wrapper.v:168.22-170.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$321",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_wrapper.v:166.17-166.47|axi_gemm_wrapper.v:166.13-170.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$323",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:148.24-148.24|axi_gemm_wrapper.v:138.17-154.24"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$325",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:137.17-137.26|axi_gemm_wrapper.v:137.13-155.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$328",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:145.24-145.24|axi_gemm_wrapper.v:138.17-154.24"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$330",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:137.17-137.26|axi_gemm_wrapper.v:137.13-155.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$334",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:142.24-142.24|axi_gemm_wrapper.v:138.17-154.24"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$336",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:137.17-137.26|axi_gemm_wrapper.v:137.13-155.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$341",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:138.31-138.31|axi_gemm_wrapper.v:138.17-154.24"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$343",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:137.17-137.26|axi_gemm_wrapper.v:137.13-155.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$348",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:138.31-138.31|axi_gemm_wrapper.v:138.17-154.24"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$350",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:137.17-137.26|axi_gemm_wrapper.v:137.13-155.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$353",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_wrapper.v:99.17-99.47|axi_gemm_wrapper.v:99.13-104.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$355",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:114.26-114.51|axi_gemm_wrapper.v:114.22-116.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$358",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_wrapper.v:112.17-112.56|axi_gemm_wrapper.v:112.13-116.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$360",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:108.26-108.51|axi_gemm_wrapper.v:108.22-110.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$363",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_wrapper.v:106.17-106.45|axi_gemm_wrapper.v:106.13-110.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$365",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:102.26-102.51|axi_gemm_wrapper.v:102.22-104.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$368",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_wrapper.v:99.17-99.47|axi_gemm_wrapper.v:99.13-104.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$eq",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [5, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procmux$298_CMP0",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_wrapper.v:296.65-296.65|axi_gemm_wrapper.v:286.17-299.24"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000101",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$299_CMP0",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_wrapper.v:295.65-295.65|axi_gemm_wrapper.v:286.17-299.24"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000101",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$300_CMP0",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_wrapper.v:294.65-294.65|axi_gemm_wrapper.v:286.17-299.24"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000101",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$301_CMP0",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_wrapper.v:293.64-293.64|axi_gemm_wrapper.v:286.17-299.24"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000101",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$302_CMP0",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_wrapper.v:292.64-292.64|axi_gemm_wrapper.v:286.17-299.24"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$303_CMP0",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_wrapper.v:291.76-291.76|axi_gemm_wrapper.v:286.17-299.24"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$304_CMP0",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_wrapper.v:289.24-289.24|axi_gemm_wrapper.v:286.17-299.24"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000011",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$324_CMP0",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:148.24-148.24|axi_gemm_wrapper.v:138.17-154.24"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$329_CMP0",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:145.24-145.24|axi_gemm_wrapper.v:138.17-154.24"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$335_CMP0",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:142.24-142.24|axi_gemm_wrapper.v:138.17-154.24"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000011",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$paramod$68676d22c8ce292dac5f8c682b003132caa641a6\\ternary_gemm",
+            "ports": [
+                {
+                  "name": "acc_out",
+                  "direction": "",
+                  "range": [544, 0]
+                },
+                {
+                  "name": "activation",
+                  "direction": "io",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "clk",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "rst_n",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "valid_in",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "valid_out",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "weight_enc",
+                  "direction": "io",
+                  "range": [34, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "gemm_i",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "axi_gemm_wrapper.v:214.7-222.6"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$pmux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [256, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [32, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procmux$297",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_wrapper.v:296.65-296.65|axi_gemm_wrapper.v:286.17-299.24"
+                  },
+                  "parameters": {
+                    "S_WIDTH": "00000000000000000000000000001000",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$adff",
+            "ports": [
+                {
+                  "name": "ARST",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "CLK",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [32, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procdff$715",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:281.5-302.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$740",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:258.5-266.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$745",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:249.5-255.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000001000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$750",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:233.5-241.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$755",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:233.5-241.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$760",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:196.5-205.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$765",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:162.5-172.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$770",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:129.5-157.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$775",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:129.5-157.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$780",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:129.5-157.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procdff$785",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:129.5-157.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$790",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:129.5-157.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$795",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:92.5-118.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$800",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:92.5-118.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$805",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:92.5-118.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$810",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:92.5-118.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$logic_not$axi_gemm_wrapper.v:123$103",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:123.28-123.40"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_not$axi_gemm_wrapper.v:124$106",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:124.28-124.39"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_not$axi_gemm_wrapper.v:124$107",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:124.44-124.54"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_not$axi_gemm_wrapper.v:174$115",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:174.28-174.38"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_not$axi_gemm_wrapper.v:185$116",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:185.42-185.54"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_not$axi_gemm_wrapper.v:244$124",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:244.51-244.69"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$305_CMP0",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_wrapper.v:286.41-286.41|axi_gemm_wrapper.v:286.17-299.24"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$349_CMP0",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:138.31-138.31|axi_gemm_wrapper.v:138.17-154.24"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_and",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$logic_and$axi_gemm_wrapper.v:106$96",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:106.17-106.45"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$axi_gemm_wrapper.v:112$100",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:112.17-112.56"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$axi_gemm_wrapper.v:112$98",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:112.17-112.42"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$axi_gemm_wrapper.v:121$102",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:121.24-121.49"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$axi_gemm_wrapper.v:123$105",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:123.28-123.54"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$axi_gemm_wrapper.v:124$108",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:124.28-124.54"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$axi_gemm_wrapper.v:168$114",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:168.26-168.54"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$axi_gemm_wrapper.v:185$117",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:185.25-185.54"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$axi_gemm_wrapper.v:200$121",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:200.17-200.58"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$axi_gemm_wrapper.v:244$125",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:244.30-244.69"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$axi_gemm_wrapper.v:263$131",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:263.22-263.57"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$axi_gemm_wrapper.v:285$142",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:285.17-285.47"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$axi_gemm_wrapper.v:99$94",
+                  "attributes": {
+                    "src": "axi_gemm_wrapper.v:99.17-99.47"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "dynports": "00000000000000000000000000000001",
+            "hdlname": "axi_gemm_wrapper",
+            "src": "axi_gemm_wrapper.v:26.1-306.10"
+        }
+      },
+      {
+        "name": "$paramod$68676d22c8ce292dac5f8c682b003132caa641a6\\ternary_gemm",
+        "cell_sorts": [
+          {
+            "type": "$paramod$892e561700d357893514fac3015a2e59f4034520\\ternary_dot",
+            "ports": [
+                {
+                  "name": "acc_out",
+                  "direction": "",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "activation",
+                  "direction": "io",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "clk",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "rst_n",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "valid_in",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "valid_out",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "weight_enc",
+                  "direction": "io",
+                  "range": [2, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "dot_3",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "ternary_gemm.v:104.7-112.6"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$paramod$3fa97d4567754c4530a7829aaca5633749f903f8\\ternary_dot",
+            "ports": [
+                {
+                  "name": "acc_out",
+                  "direction": "",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "activation",
+                  "direction": "io",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "clk",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "rst_n",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "valid_in",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "valid_out",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "weight_enc",
+                  "direction": "io",
+                  "range": [2, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "dot_2",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "ternary_gemm.v:89.7-97.6"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$paramod$2b1c8065da0bee4a9a1dcaaec4555b2b6f268863\\ternary_dot",
+            "ports": [
+                {
+                  "name": "acc_out",
+                  "direction": "",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "activation",
+                  "direction": "io",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "clk",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "rst_n",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "valid_in",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "valid_out",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "weight_enc",
+                  "direction": "io",
+                  "range": [2, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "dot_1",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "ternary_gemm.v:74.7-82.6"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$paramod$3eda9c714f7855805c9795b3f4969f9a8bec51f9\\ternary_dot",
+            "ports": [
+                {
+                  "name": "acc_out",
+                  "direction": "",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "activation",
+                  "direction": "io",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "clk",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "rst_n",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "valid_in",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "valid_out",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "weight_enc",
+                  "direction": "io",
+                  "range": [2, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "dot_0",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "ternary_gemm.v:59.7-67.6"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "dynports": "00000000000000000000000000000001",
+            "hdlname": "ternary_gemm",
+            "src": "ternary_gemm.v:31.1-114.10"
+        }
+      },
+      {
+        "name": "$paramod$892e561700d357893514fac3015a2e59f4034520\\ternary_dot",
+        "cell_sorts": [
+          {
+            "type": "$sub",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [16, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [16, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$sub$ternary_dot.v:113$167",
+                  "attributes": {
+                    "src": "ternary_dot.v:113.36-113.49"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000010000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000010000"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$adff",
+            "ports": [
+                {
+                  "name": "ARST",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "CLK",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [32, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procdff$1137",
+                  "attributes": {
+                    "src": "ternary_dot.v:147.5-155.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$1142",
+                  "attributes": {
+                    "src": "ternary_dot.v:138.5-144.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$1147",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$1152",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procdff$1157",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procdff$1162",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$1167",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$1186",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$1191",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0000000000000100",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000010000"
+                  }
+                },
+                {
+                  "name": "$procdff$1196",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$1201",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$1213",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$1218",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procdff$1223",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procdff$1228",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "00000000000000000000000000000000",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$1233",
+                  "attributes": {
+                    "src": "ternary_dot.v:76.5-133.8"
+                  },
+                  "parameters": {
+                    "ARST_POLARITY": "00000000000000000000000000000000",
+                    "ARST_VALUE": "0",
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [32, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procmux$685",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:150.22-150.33|ternary_dot.v:150.18-154.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$689",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:104.22-104.36|ternary_dot.v:104.18-114.21"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$691",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:103.18-103.67|ternary_dot.v:103.14-119.17"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$695",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:104.22-104.36|ternary_dot.v:104.18-114.21"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$697",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:103.18-103.67|ternary_dot.v:103.14-119.17"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$701",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:104.22-104.36|ternary_dot.v:104.18-114.21"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000010000"
+                  }
+                },
+                {
+                  "name": "$procmux$703",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:103.18-103.67|ternary_dot.v:103.14-119.17"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000010000"
+                  }
+                },
+                {
+                  "name": "$procmux$707",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:104.22-104.36|ternary_dot.v:104.18-114.21"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$709",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "ternary_dot.v:103.18-103.67|ternary_dot.v:103.14-119.17"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$ternary$ternary_dot.v:95$161",
+                  "attributes": {
+                    "src": "ternary_dot.v:95.26-97.71"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$ternary$ternary_dot.v:96$160",
+                  "attributes": {
+                    "src": "ternary_dot.v:96.26-97.71"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$neg",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [8, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$neg$ternary_dot.v:97$159",
+                  "attributes": {
+                    "src": "ternary_dot.v:97.51-97.71"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "Y_WIDTH": "00000000000000000000000000001000"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_or",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$logic_or$ternary_dot.v:103$164",
+                  "attributes": {
+                    "src": "ternary_dot.v:103.31-103.66"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_and",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$logic_and$ternary_dot.v:103$165",
+                  "attributes": {
+                    "src": "ternary_dot.v:103.18-103.67"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$ternary_dot.v:95$157",
+                  "attributes": {
+                    "src": "ternary_dot.v:95.27-95.46"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_not$ternary_dot.v:103$163",
+                  "attributes": {
+                    "src": "ternary_dot.v:103.31-103.43"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$eq",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [16, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$ternary_dot.v:104$166",
+                  "attributes": {
+                    "src": "ternary_dot.v:104.22-104.36"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000010000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$ternary_dot.v:96$158",
+                  "attributes": {
+                    "src": "ternary_dot.v:96.27-96.46"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$add",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [32, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$add$ternary_dot.v:99$162",
+                  "attributes": {
+                    "src": "ternary_dot.v:99.26-99.44"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000100000",
+                    "Y_WIDTH": "00000000000000000000000000100000"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "dynports": "00000000000000000000000000000001",
+            "hdlname": "ternary_dot",
+            "src": "ternary_dot.v:24.1-159.10"
+        }
+      },
+      {
+        "name": "axi_gemm_weight_formal",
+        "cell_sorts": [
+          {
+            "type": "$paramod$68676d22c8ce292dac5f8c682b003132caa641a6\\axi_gemm_wrapper",
+            "ports": [
+                {
+                  "name": "s_axi_aclk",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "s_axi_araddr",
+                  "direction": "io",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "s_axi_aresetn",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "s_axi_arprot",
+                  "direction": "io",
+                  "range": [3, 0]
+                },
+                {
+                  "name": "s_axi_arready",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "s_axi_arvalid",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "s_axi_awaddr",
+                  "direction": "io",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "s_axi_awprot",
+                  "direction": "io",
+                  "range": [3, 0]
+                },
+                {
+                  "name": "s_axi_awready",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "s_axi_awvalid",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "s_axi_bready",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "s_axi_bresp",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "s_axi_bvalid",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "s_axi_rdata",
+                  "direction": "",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "s_axi_rready",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "s_axi_rresp",
+                  "direction": "",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "s_axi_rvalid",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "s_axi_wdata",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "s_axi_wready",
+                  "direction": "",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "s_axi_wstrb",
+                  "direction": "io",
+                  "range": [4, 0]
+                },
+                {
+                  "name": "s_axi_wvalid",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "dut",
+                  "attributes": {
+                    "module_not_derived": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:63.7-85.6"
+                  },
+                  "parameters": {
+
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$pmux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [32, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [96, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [3, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [32, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procmux$385",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:239.50-239.50|axi_gemm_weight_formal.v:236.13-242.20"
+                  },
+                  "parameters": {
+                    "S_WIDTH": "00000000000000000000000000000011",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$398",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:224.56-224.56|axi_gemm_weight_formal.v:222.13-228.20"
+                  },
+                  "parameters": {
+                    "S_WIDTH": "00000000000000000000000000000011",
+                    "WIDTH": "00000000000000000000000000000100"
+                  }
+                },
+                {
+                  "name": "$procmux$495",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:172.20-172.20|axi_gemm_weight_formal.v:151.13-199.20"
+                  },
+                  "parameters": {
+                    "S_WIDTH": "00000000000000000000000000000010",
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$503",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:191.20-191.20|axi_gemm_weight_formal.v:151.13-199.20"
+                  },
+                  "parameters": {
+                    "S_WIDTH": "00000000000000000000000000000100",
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procmux$507",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:209.20-209.20|axi_gemm_weight_formal.v:205.13-214.20"
+                  },
+                  "parameters": {
+                    "S_WIDTH": "00000000000000000000000000000010",
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procmux$555",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:191.20-191.20|axi_gemm_weight_formal.v:151.13-199.20"
+                  },
+                  "parameters": {
+                    "S_WIDTH": "00000000000000000000000000000110",
+                    "WIDTH": "00000000000000000000000000000011"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$check",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "ARGS",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "EN",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "TRG",
+                  "direction": "io",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "_witness_.check_assert_axi_gemm_weight_formal_v_285_76",
+                  "attributes": {
+                    "hdlname": "_witness_ check_assert_axi_gemm_weight_formal_v_285_76",
+                    "keep": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:285.13-285.60"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assert",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111111",
+                    "TRG_ENABLE": "00000000000000000000000000000001",
+                    "TRG_POLARITY": "1",
+                    "TRG_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "_witness_.check_assume_axi_gemm_weight_formal_v_92_9",
+                  "attributes": {
+                    "hdlname": "_witness_ check_assume_axi_gemm_weight_formal_v_92_9",
+                    "keep": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:92.13-92.35"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assume",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111111",
+                    "TRG_ENABLE": "00000000000000000000000000000001",
+                    "TRG_POLARITY": "1",
+                    "TRG_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "_witness_.check_assume_axi_gemm_weight_formal_v_95_12",
+                  "attributes": {
+                    "hdlname": "_witness_ check_assume_axi_gemm_weight_formal_v_95_12",
+                    "keep": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:95.13-95.34"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "assume",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111110",
+                    "TRG_ENABLE": "00000000000000000000000000000001",
+                    "TRG_POLARITY": "1",
+                    "TRG_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "_witness_.check_cover_axi_gemm_weight_formal_v_292_80",
+                  "attributes": {
+                    "hdlname": "_witness_ check_cover_axi_gemm_weight_formal_v_292_80",
+                    "keep": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:292.13-292.36"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "cover",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111111",
+                    "TRG_ENABLE": "00000000000000000000000000000001",
+                    "TRG_POLARITY": "1",
+                    "TRG_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "_witness_.check_cover_axi_gemm_weight_formal_v_293_82",
+                  "attributes": {
+                    "hdlname": "_witness_ check_cover_axi_gemm_weight_formal_v_293_82",
+                    "keep": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:293.13-293.37"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "cover",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111110",
+                    "TRG_ENABLE": "00000000000000000000000000000001",
+                    "TRG_POLARITY": "1",
+                    "TRG_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "_witness_.check_cover_axi_gemm_weight_formal_v_294_83",
+                  "attributes": {
+                    "hdlname": "_witness_ check_cover_axi_gemm_weight_formal_v_294_83",
+                    "keep": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:294.13-294.57"
+                  },
+                  "parameters": {
+                    "ARGS_WIDTH": "00000000000000000000000000000000",
+                    "FLAVOR": "cover",
+                    "FORMAT": true,
+                    "PRIORITY": "11111111111111111111111111111101",
+                    "TRG_ENABLE": "00000000000000000000000000000001",
+                    "TRG_POLARITY": "1",
+                    "TRG_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$dff",
+            "ports": [
+                {
+                  "name": "CLK",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "D",
+                  "direction": "io",
+                  "range": [4, 0]
+                },
+                {
+                  "name": "Q",
+                  "direction": "",
+                  "range": [4, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procdff$811",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:278.5-281.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000100"
+                  }
+                },
+                {
+                  "name": "$procdff$812",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:246.5-273.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procdff$813",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:246.5-273.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$814",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:246.5-273.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procdff$815",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:246.5-273.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$816",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:246.5-273.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$822",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:145.5-201.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000011"
+                  }
+                },
+                {
+                  "name": "$procdff$823",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:145.5-201.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procdff$824",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:145.5-201.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procdff$825",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:138.5-143.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000100010"
+                  }
+                },
+                {
+                  "name": "$procdff$826",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:126.5-131.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$827",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:114.5-122.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$828",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:114.5-122.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procdff$829",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:90.5-97.8"
+                  },
+                  "parameters": {
+                    "CLK_POLARITY": "1",
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_not",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$logic_not$axi_gemm_weight_formal.v:123$15",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:123.44-123.55"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_not$axi_gemm_weight_formal.v:92$10",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:92.20-92.34"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$574_CMP0",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:151.25-151.25|axi_gemm_weight_formal.v:151.13-199.20"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000011",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$eq",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [34, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [34, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$eq$axi_gemm_weight_formal.v:285$77",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:285.20-285.59"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000100010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000100010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$eq$axi_gemm_weight_formal.v:292$81",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:292.19-292.35"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000011",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000011",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$540_CMP0",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:209.20-209.20|axi_gemm_weight_formal.v:205.13-214.20"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$543_CMP0",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:205.29-205.29|axi_gemm_weight_formal.v:205.13-214.20"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$556_CMP0",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:191.20-191.20|axi_gemm_weight_formal.v:151.13-199.20"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000011",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000011",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$559_CMP0",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:184.20-184.20|axi_gemm_weight_formal.v:151.13-199.20"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000011",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000011",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$565_CMP0",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:172.20-172.20|axi_gemm_weight_formal.v:151.13-199.20"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000011",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$568_CMP0",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:164.20-164.20|axi_gemm_weight_formal.v:151.13-199.20"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000011",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$571_CMP0",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:157.20-157.20|axi_gemm_weight_formal.v:151.13-199.20"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000011",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$logic_and",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$logic_and$axi_gemm_weight_formal.v:123$16",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:123.30-123.55"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$axi_gemm_weight_formal.v:187$46",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:187.25-187.58"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$axi_gemm_weight_formal.v:187$47",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:187.25-187.74"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$axi_gemm_weight_formal.v:207$43",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:207.25-207.54"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$axi_gemm_weight_formal.v:211$44",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:211.25-211.53"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$axi_gemm_weight_formal.v:284$75",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:284.13-284.49"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$logic_and$axi_gemm_weight_formal.v:294$85",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:294.19-294.56"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000001",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$ge",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$ge$axi_gemm_weight_formal.v:176$41",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:176.29-176.47"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$ge$axi_gemm_weight_formal.v:284$74",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:284.13-284.28"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000011",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$ge$axi_gemm_weight_formal.v:291$79",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:291.13-291.27"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$mux",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "S",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$procmux$374",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:291.13-291.27|axi_gemm_weight_formal.v:291.9-295.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$376",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:284.13-284.49|axi_gemm_weight_formal.v:284.9-286.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$378",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:280.18-280.33|axi_gemm_weight_formal.v:280.14-280.58"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000100"
+                  }
+                },
+                {
+                  "name": "$procmux$381",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:279.13-279.27|axi_gemm_weight_formal.v:279.9-280.58"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000100"
+                  }
+                },
+                {
+                  "name": "$procmux$452",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:269.21-269.33|axi_gemm_weight_formal.v:269.17-270.42"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$455",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:266.17-266.34|axi_gemm_weight_formal.v:266.13-271.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$458",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:247.13-247.27|axi_gemm_weight_formal.v:247.9-272.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$460",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:262.21-262.33|axi_gemm_weight_formal.v:262.17-263.42"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$463",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:254.17-254.34|axi_gemm_weight_formal.v:254.13-264.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$466",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:247.13-247.27|axi_gemm_weight_formal.v:247.9-272.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$469",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:254.17-254.34|axi_gemm_weight_formal.v:254.13-264.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$472",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:247.13-247.27|axi_gemm_weight_formal.v:247.9-272.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100000"
+                  }
+                },
+                {
+                  "name": "$procmux$474",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:260.21-260.34|axi_gemm_weight_formal.v:260.17-261.43"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$477",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:254.17-254.34|axi_gemm_weight_formal.v:254.13-264.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$480",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:247.13-247.27|axi_gemm_weight_formal.v:247.9-272.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$483",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:254.17-254.34|axi_gemm_weight_formal.v:254.13-264.16"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$486",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:247.13-247.27|axi_gemm_weight_formal.v:247.9-272.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$491",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:176.29-176.47|axi_gemm_weight_formal.v:176.25-182.28"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$493",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:175.25-175.74|axi_gemm_weight_formal.v:175.21-183.24"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$497",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:167.25-167.74|axi_gemm_weight_formal.v:167.21-171.24"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$501",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:146.13-146.27|axi_gemm_weight_formal.v:146.9-200.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$procmux$505",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:211.25-211.53|axi_gemm_weight_formal.v:211.21-212.43"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procmux$509",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:207.25-207.54|axi_gemm_weight_formal.v:207.21-208.43"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procmux$512",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:187.25-187.74|axi_gemm_weight_formal.v:187.21-190.24"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procmux$544",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:160.25-160.74|axi_gemm_weight_formal.v:160.21-163.24"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procmux$547",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:153.25-153.39|axi_gemm_weight_formal.v:153.21-156.24"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procmux$551",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:146.13-146.27|axi_gemm_weight_formal.v:146.9-200.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                },
+                {
+                  "name": "$procmux$553",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:194.25-194.42|axi_gemm_weight_formal.v:194.21-195.42"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000011"
+                  }
+                },
+                {
+                  "name": "$procmux$557",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:187.25-187.74|axi_gemm_weight_formal.v:187.21-190.24"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000011"
+                  }
+                },
+                {
+                  "name": "$procmux$561",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:176.29-176.47|axi_gemm_weight_formal.v:176.25-182.28"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000011"
+                  }
+                },
+                {
+                  "name": "$procmux$563",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:175.25-175.74|axi_gemm_weight_formal.v:175.21-183.24"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000011"
+                  }
+                },
+                {
+                  "name": "$procmux$566",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:167.25-167.74|axi_gemm_weight_formal.v:167.21-171.24"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000011"
+                  }
+                },
+                {
+                  "name": "$procmux$569",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:160.25-160.74|axi_gemm_weight_formal.v:160.21-163.24"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000011"
+                  }
+                },
+                {
+                  "name": "$procmux$572",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:153.25-153.39|axi_gemm_weight_formal.v:153.21-156.24"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000011"
+                  }
+                },
+                {
+                  "name": "$procmux$576",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:146.13-146.27|axi_gemm_weight_formal.v:146.9-200.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000011"
+                  }
+                },
+                {
+                  "name": "$procmux$578",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:141.18-141.34|axi_gemm_weight_formal.v:141.14-142.47"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100010"
+                  }
+                },
+                {
+                  "name": "$procmux$581",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:139.13-139.27|axi_gemm_weight_formal.v:139.9-142.47"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000100010"
+                  }
+                },
+                {
+                  "name": "$procmux$583",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:129.18-129.34|axi_gemm_weight_formal.v:129.14-130.39"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$586",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:127.13-127.27|axi_gemm_weight_formal.v:127.9-130.39"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$589",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:115.13-115.27|axi_gemm_weight_formal.v:115.9-121.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$592",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:115.13-115.27|axi_gemm_weight_formal.v:115.9-121.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$595",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:91.13-91.26|axi_gemm_weight_formal.v:91.9-96.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$598",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:91.13-91.26|axi_gemm_weight_formal.v:91.9-96.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$procmux$601",
+                  "attributes": {
+                    "full_case": "00000000000000000000000000000001",
+                    "src": "axi_gemm_weight_formal.v:91.13-91.26|axi_gemm_weight_formal.v:91.9-96.12"
+                  },
+                  "parameters": {
+                    "WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$lt",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [4, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [4, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$lt$axi_gemm_weight_formal.v:280$71",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:280.18-280.33"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000100",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$lt$axi_gemm_weight_formal.v:91$8",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:91.13-91.26"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$reduce_or",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [2, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [0, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$auto$opt_reduce.cc:131:opt_pmux$1234",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                },
+                {
+                  "name": "$auto$opt_reduce.cc:131:opt_pmux$1236",
+                  "attributes": {
+
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000011",
+                    "Y_WIDTH": "00000000000000000000000000000001"
+                  }
+                }
+            ]
+          },
+          {
+            "type": "$add",
+            "ports": [
+                {
+                  "name": "A",
+                  "direction": "io",
+                  "range": [8, 0]
+                },
+                {
+                  "name": "B",
+                  "direction": "io",
+                  "range": [0, 0]
+                },
+                {
+                  "name": "Y",
+                  "direction": "",
+                  "range": [8, 0]
+                }
+            ],
+            "cells": [
+                {
+                  "name": "$add$axi_gemm_weight_formal.v:180$42",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:180.42-180.53"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000001000",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000001000"
+                  }
+                },
+                {
+                  "name": "$add$axi_gemm_weight_formal.v:280$72",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:280.46-280.57"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000100",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000100"
+                  }
+                },
+                {
+                  "name": "$add$axi_gemm_weight_formal.v:93$11",
+                  "attributes": {
+                    "src": "axi_gemm_weight_formal.v:93.26-93.39"
+                  },
+                  "parameters": {
+                    "A_SIGNED": "00000000000000000000000000000000",
+                    "A_WIDTH": "00000000000000000000000000000010",
+                    "B_SIGNED": "00000000000000000000000000000000",
+                    "B_WIDTH": "00000000000000000000000000000001",
+                    "Y_WIDTH": "00000000000000000000000000000010"
+                  }
+                }
+            ]
+          }
+        ],
+        "attributes": {
+            "keep": "00000000000000000000000000000001",
+            "hdlname": "axi_gemm_weight_formal",
+            "dynports": "00000000000000000000000000000001",
+            "top": "00000000000000000000000000000001",
+            "src": "axi_gemm_weight_formal.v:10.1-298.10"
+        }
+      }
+  ]
+}

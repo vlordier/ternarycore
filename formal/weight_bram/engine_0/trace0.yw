@@ -1,0 +1,50 @@
+{
+  "format": "Yosys Witness Trace",
+  "generator": "smtbmc",
+  "clocks": [
+    {"path": ["\\clk"], "edge": "posedge", "offset": 0}
+  ],
+  "signals": [
+    {"path": ["\\b_pending"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\clk"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\dut", "\\_witness_", "\\anyseq_auto_setundef_cc_550_execute_392"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\dut", "\\_witness_", "\\anyseq_auto_setundef_cc_550_execute_394"], "width": 24, "offset": 0, "init_only": false},
+    {"path": ["\\dut", "\\_witness_", "\\anyseq_auto_setundef_cc_550_execute_396"], "width": 2, "offset": 0, "init_only": false},
+    {"path": ["\\dut", "\\_witness_", "\\anyseq_auto_setundef_cc_550_execute_398"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\dut", "\\_witness_", "\\anyseq_auto_setundef_cc_550_execute_400"], "width": 16, "offset": 0, "init_only": false},
+    {"path": ["\\dut", "\\_witness_", "\\anyseq_auto_setundef_cc_550_execute_402"], "width": 2, "offset": 0, "init_only": false},
+    {"path": ["\\dut", "\\_witness_", "\\anyseq_auto_setundef_cc_550_execute_404"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\dut", "\\_witness_", "\\anyseq_auto_setundef_cc_550_execute_406"], "width": 8, "offset": 0, "init_only": false},
+    {"path": ["\\dut", "\\_witness_", "\\anyseq_auto_setundef_cc_550_execute_408"], "width": 2, "offset": 0, "init_only": false},
+    {"path": ["\\dut", "\\_witness_", "\\anyseq_auto_setundef_cc_550_execute_410"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\dut", "\\_witness_", "\\anyseq_auto_setundef_cc_550_execute_412"], "width": 2, "offset": 0, "init_only": false},
+    {"path": ["\\dut", "\\_witness_", "\\anyseq_auto_setundef_cc_550_execute_414"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\dut", "\\_witness_", "\\anyseq_auto_setundef_cc_550_execute_416"], "width": 2, "offset": 0, "init_only": false},
+    {"path": ["\\dut", "\\_witness_", "\\anyseq_auto_setundef_cc_550_execute_418"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\dut", "\\_witness_", "\\anyseq_auto_setundef_cc_550_execute_420"], "width": 2, "offset": 0, "init_only": false},
+    {"path": ["\\dut", "\\_witness_", "\\anyseq_auto_setundef_cc_550_execute_422"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\dut", "\\_witness_", "\\anyseq_auto_setundef_cc_550_execute_424"], "width": 2, "offset": 0, "init_only": false},
+    {"path": ["\\dut", "\\_witness_", "\\anyseq_auto_setundef_cc_550_execute_426"], "width": 32, "offset": 0, "init_only": false},
+    {"path": ["\\dut", "\\_witness_", "\\anyseq_auto_setundef_cc_550_execute_428"], "width": 2, "offset": 0, "init_only": false},
+    {"path": ["\\rst_n"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\dut", "\\_witness_", "\\anyinit_procdff_272"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\_witness_", "\\anyinit_procdff_289"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\_witness_", "\\anyinit_procdff_294"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\_witness_", "\\anyinit_procdff_299"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\_witness_", "\\anyinit_procdff_304"], "width": 4, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\bram", "\\[0]"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\s_axi_rdata"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\weight_word_r"], "width": 32, "offset": 0, "init_only": true},
+    {"path": ["\\state"], "width": 5, "offset": 0, "init_only": true}
+  ],
+  "steps": [
+    {"bits": "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"},
+    {"bits": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"},
+    {"bits": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"},
+    {"bits": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"},
+    {"bits": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"},
+    {"bits": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"},
+    {"bits": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001"},
+    {"bits": "10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"}
+  ]
+}

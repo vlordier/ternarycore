@@ -1,0 +1,27 @@
+Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+engine_0 (smtbmc) returned FAIL
+cover trace: engine_0/trace0.vcd
+cover trace: engine_0/trace0.yw
+  reached cover statement ternary_gemm_stream_formal._witness_.check_cover_ternary_gemm_stream_formal_v_291_97 at ternary_gemm_stream_formal.v:291.13-291.39 step 3
+cover trace: engine_0/trace1.vcd
+cover trace: engine_0/trace1.yw
+  reached cover statement ternary_gemm_stream_formal._witness_.check_cover_ternary_gemm_stream_formal_v_292_99 at ternary_gemm_stream_formal.v:292.13-292.39 step 6
+cover trace: engine_0/trace2.vcd
+cover trace: engine_0/trace2.yw
+  reached cover statement ternary_gemm_stream_formal._witness_.check_cover_ternary_gemm_stream_formal_v_305_109 at ternary_gemm_stream_formal.v:305.13-305.57 step 8
+cover trace: engine_0/trace3.vcd
+cover trace: engine_0/trace3.yw
+  reached cover statement ternary_gemm_stream_formal._witness_.check_cover_ternary_gemm_stream_formal_v_311_115 at ternary_gemm_stream_formal.v:311.13-311.35 step 10
+cover trace: engine_0/trace4.vcd
+cover trace: engine_0/trace4.yw
+  reached cover statement ternary_gemm_stream_formal._witness_.check_cover_ternary_gemm_stream_formal_v_299_105 at ternary_gemm_stream_formal.v:299.13-299.28 step 11
+  reached cover statement ternary_gemm_stream_formal._witness_.check_cover_ternary_gemm_stream_formal_v_302_106 at ternary_gemm_stream_formal.v:302.13-302.41 step 11
+cover trace: engine_0/trace5.vcd
+cover trace: engine_0/trace5.yw
+  reached cover statement ternary_gemm_stream_formal._witness_.check_cover_ternary_gemm_stream_formal_v_308_112 at ternary_gemm_stream_formal.v:308.13-308.47 step 11
+cover trace: engine_0/trace6.vcd
+cover trace: engine_0/trace6.yw
+  reached cover statement ternary_gemm_stream_formal._witness_.check_cover_ternary_gemm_stream_formal_v_293_101 at ternary_gemm_stream_formal.v:293.13-293.39 step 20
+unreached cover statements:
+  ternary_gemm_stream_formal._witness_.check_cover_ternary_gemm_stream_formal_v_296_103 at ternary_gemm_stream_formal.v:296.13-296.41

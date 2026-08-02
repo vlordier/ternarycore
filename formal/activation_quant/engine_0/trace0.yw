@@ -1,0 +1,26 @@
+{
+  "format": "Yosys Witness Trace",
+  "generator": "smtbmc",
+  "clocks": [
+    {"path": ["\\clk"], "edge": "posedge", "offset": 0}
+  ],
+  "signals": [
+    {"path": ["\\clk"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\inv"], "width": 22, "offset": 0, "init_only": false},
+    {"path": ["\\rst_n"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\valid_in"], "width": 1, "offset": 0, "init_only": false},
+    {"path": ["\\x"], "width": 8, "offset": 0, "init_only": false},
+    {"path": ["\\dut", "\\_witness_", "\\anyinit_procdff_115"], "width": 8, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\_witness_", "\\anyinit_procdff_120"], "width": 1, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\_witness_", "\\anyinit_procdff_125"], "width": 30, "offset": 0, "init_only": true},
+    {"path": ["\\dut", "\\_witness_", "\\anyinit_procdff_130"], "width": 1, "offset": 0, "init_only": true}
+  ],
+  "steps": [
+    {"bits": "0000000000000000000000000000000000000000000000000000000000000000000000000"},
+    {"bits": "000000000000000000000000000000000"},
+    {"bits": "000000001100000010100010100011110"},
+    {"bits": "000000000100000010100010100011110"},
+    {"bits": "000000000100000010100010100011110"},
+    {"bits": "000000000100000010100010100011110"}
+  ]
+}

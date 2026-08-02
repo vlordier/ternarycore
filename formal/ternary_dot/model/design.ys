@@ -1,0 +1,12 @@
+# running in ternary_dot/src/
+read -formal ternary_dot.v
+read -formal ternary_dot_formal.v
+setattr -unset keep *
+setattr -unset dont_touch *
+setattr -unset mark_debug *
+prep -top ternary_dot_formal
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

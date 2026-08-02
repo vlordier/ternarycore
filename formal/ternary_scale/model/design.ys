@@ -1,0 +1,9 @@
+# running in ternary_scale/src/
+read -formal ternary_scale.v
+read -formal ternary_scale_formal.v
+prep -top ternary_scale_formal
+
+hierarchy -smtcheck
+rename -witness
+write_jny -no-connections ../model/design.json
+write_rtlil ../model/design.il

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-08-02T23:59:15" hostname="macadam2-2.local" package="weight_bram" id="0" name="default" tests="2" errors="0" failures="0" time="0" skipped="1">
+<properties>
+<property name="os" value="Darwin"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="default" name="build execution" time="0">
+</testcase>
+<testcase classname="default" name="Property ASSERT in weight_bram_formal at weight_bram_formal.v:91.13-91.49" time="0" type="ASSERT" location="weight_bram_formal.v:91.13-91.49" id="_witness_.check_assert_weight_bram_formal_v_91_34">
+<skipped />
+</testcase>
+<testcase classname="default" name="Property COVER in weight_bram_formal at weight_bram_formal.v:96.27-96.49" time="0" type="COVER" location="weight_bram_formal.v:96.27-96.49" id="_witness_.check_cover_weight_bram_formal_v_96_38" tracefile="engine_0/trace0.vcd">
+</testcase>
+<system-out>SBY 23:59:15 [weight_bram] Removing directory '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/weight_bram'.
+SBY 23:59:15 [weight_bram] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/../rtl/weight_bram.v' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/weight_bram/src/weight_bram.v'.
+SBY 23:59:15 [weight_bram] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/weight_bram_formal.v' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/weight_bram/src/weight_bram_formal.v'.
+SBY 23:59:15 [weight_bram] engine_0: smtbmc
+SBY 23:59:15 [weight_bram] base: starting process &quot;cd weight_bram/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 23:59:15 [weight_bram] base: weight_bram_formal.v:77: Warning: Identifier `\dut.b_pending' is implicitly declared.
+SBY 23:59:15 [weight_bram] base: Warning: Resizing cell port weight_bram_formal.dut.s_axi_awaddr from 8 bits to 4 bits.
+SBY 23:59:15 [weight_bram] base: Warning: Wire weight_bram_formal.\b_pending is used but has no driver.
+SBY 23:59:15 [weight_bram] base: Warning: Wire weight_bram_formal.\rst_n is used but has no driver.
+SBY 23:59:15 [weight_bram] base: finished (returncode=0)
+SBY 23:59:15 [weight_bram] prep: starting process &quot;cd weight_bram/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 23:59:15 [weight_bram] prep: Warning: Wire weight_bram_formal.\rst_n is used but has no driver.
+SBY 23:59:15 [weight_bram] prep: Warning: Wire weight_bram_formal.\b_pending is used but has no driver.
+SBY 23:59:15 [weight_bram] prep: finished (returncode=0)
+SBY 23:59:15 [weight_bram] smt2: starting process &quot;cd weight_bram/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 23:59:15 [weight_bram] smt2: finished (returncode=0)
+SBY 23:59:15 [weight_bram] engine_0: starting process &quot;cd weight_bram; yosys-smtbmc --presat --unroll -c --noprogress -t 12  --append 0 --dump-vcd engine_0/trace%.vcd --dump-yw engine_0/trace%.yw --dump-vlogtb engine_0/trace%_tb.v --dump-smtc engine_0/trace%.smtc model/design_smt2.smt2&quot;
+SBY 23:59:15 [weight_bram] engine_0: ##   0:00:00  Solver: yices
+SBY 23:59:15 [weight_bram] engine_0: ##   0:00:00  Checking cover reachability in step 0..
+SBY 23:59:15 [weight_bram] engine_0: ##   0:00:00  Checking cover reachability in step 1..
+SBY 23:59:15 [weight_bram] engine_0: ##   0:00:00  Checking cover reachability in step 2..
+SBY 23:59:15 [weight_bram] engine_0: ##   0:00:00  Checking cover reachability in step 3..
+SBY 23:59:15 [weight_bram] engine_0: ##   0:00:00  Checking cover reachability in step 4..
+SBY 23:59:15 [weight_bram] engine_0: ##   0:00:00  Checking cover reachability in step 5..
+SBY 23:59:15 [weight_bram] engine_0: ##   0:00:00  Checking cover reachability in step 6..
+SBY 23:59:15 [weight_bram] engine_0: ##   0:00:00  Checking cover reachability in step 7..
+SBY 23:59:15 [weight_bram] engine_0: ##   0:00:00  Reached cover statement in step 7 at weight_bram_formal: weight_bram_formal.v:96.27-96.49 (_witness_.check_cover_weight_bram_formal_v_96_38)
+SBY 23:59:15 [weight_bram] engine_0: ##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+SBY 23:59:15 [weight_bram] engine_0: ##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+SBY 23:59:15 [weight_bram] engine_0: ##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+SBY 23:59:15 [weight_bram] engine_0: ##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+SBY 23:59:15 [weight_bram] engine_0: ##   0:00:00  Status: passed
+SBY 23:59:15 [weight_bram] engine_0: finished (returncode=0)
+SBY 23:59:15 [weight_bram] engine_0: Status returned by engine: pass
+SBY 23:59:15 [weight_bram] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 23:59:15 [weight_bram] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 23:59:15 [weight_bram] summary: engine_0 (smtbmc) returned pass
+SBY 23:59:15 [weight_bram] summary: cover trace: weight_bram/engine_0/trace0.vcd
+SBY 23:59:15 [weight_bram] summary:   reached cover statement weight_bram_formal._witness_.check_cover_weight_bram_formal_v_96_38 at weight_bram_formal.v:96.27-96.49 step 7
+SBY 23:59:15 [weight_bram] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>

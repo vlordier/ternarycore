@@ -1,0 +1,26 @@
+##   0:00:00  Solver: yices
+##   0:00:00  Checking cover reachability in step 0..
+##   0:00:00  Checking cover reachability in step 1..
+##   0:00:00  Checking cover reachability in step 2..
+##   0:00:00  Checking cover reachability in step 3..
+##   0:00:00  Checking cover reachability in step 4..
+##   0:00:00  Checking cover reachability in step 5..
+##   0:00:00  Reached cover statement in step 5 at ternary_scale_formal: ternary_scale_formal.v:149.13-149.29 (_witness_.check_cover_ternary_scale_formal_v_149_65)
+##   0:00:00  Writing trace to VCD file: engine_0/trace0.vcd
+##   0:00:00  Writing trace to Verilog testbench: engine_0/trace0_tb.v
+##   0:00:00  Writing trace to constraints file: engine_0/trace0.smtc
+##   0:00:00  Writing trace to Yosys witness file: engine_0/trace0.yw
+##   0:00:00  Checking cover reachability in step 5..
+##   0:00:00  Reached cover statement in step 5 at ternary_scale_formal: ternary_scale_formal.v:150.13-150.41 (_witness_.check_cover_ternary_scale_formal_v_150_66)
+##   0:00:00  Reached cover statement in step 5 at ternary_scale_formal: ternary_scale_formal.v:152.13-152.40 (_witness_.check_cover_ternary_scale_formal_v_152_72)
+##   0:00:00  Writing trace to VCD file: engine_0/trace1.vcd
+##   0:00:00  Writing trace to Verilog testbench: engine_0/trace1_tb.v
+##   0:00:00  Writing trace to constraints file: engine_0/trace1.smtc
+##   0:00:00  Writing trace to Yosys witness file: engine_0/trace1.yw
+##   0:00:00  Checking cover reachability in step 5..
+##   0:00:00  Reached cover statement in step 5 at ternary_scale_formal: ternary_scale_formal.v:151.13-151.40 (_witness_.check_cover_ternary_scale_formal_v_151_69)
+##   0:00:00  Writing trace to VCD file: engine_0/trace2.vcd
+##   0:00:00  Writing trace to Verilog testbench: engine_0/trace2_tb.v
+##   0:00:00  Writing trace to constraints file: engine_0/trace2.smtc
+##   0:00:00  Writing trace to Yosys witness file: engine_0/trace2.yw
+##   0:00:00  Status: passed

@@ -1,0 +1,16 @@
+Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+engine_0 (smtbmc) returned pass
+cover trace: engine_0/trace0.vcd
+cover trace: engine_0/trace0.yw
+  reached cover statement ternary_pipeline_stress_formal._witness_.check_cover_ternary_pipeline_stress_formal_v_262_200 at ternary_pipeline_stress_formal.v:262.13-262.37 step 7
+cover trace: engine_0/trace1.vcd
+cover trace: engine_0/trace1.yw
+  reached cover statement ternary_pipeline_stress_formal._witness_.check_cover_ternary_pipeline_stress_formal_v_258_190 at ternary_pipeline_stress_formal.v:258.13-258.29 step 11
+cover trace: engine_0/trace2.vcd
+cover trace: engine_0/trace2.yw
+  reached cover statement ternary_pipeline_stress_formal._witness_.check_cover_ternary_pipeline_stress_formal_v_259_191 at ternary_pipeline_stress_formal.v:259.13-259.72 step 11
+  reached cover statement ternary_pipeline_stress_formal._witness_.check_cover_ternary_pipeline_stress_formal_v_260_194 at ternary_pipeline_stress_formal.v:260.13-260.72 step 11
+cover trace: engine_0/trace3.vcd
+cover trace: engine_0/trace3.yw
+  reached cover statement ternary_pipeline_stress_formal._witness_.check_cover_ternary_pipeline_stress_formal_v_261_197 at ternary_pipeline_stress_formal.v:261.13-261.80 step 11

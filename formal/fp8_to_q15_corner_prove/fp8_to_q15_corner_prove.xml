@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+<testsuite timestamp="2026-08-02T23:59:09" hostname="macadam2-2.local" package="fp8_to_q15_corner_prove" id="0" name="default" tests="13" errors="0" failures="0" time="0" skipped="0">
+<properties>
+<property name="os" value="Darwin"/>
+<property name="expect" value="PASS"/>
+<property name="status" value="PASS"/>
+</properties>
+<testcase classname="default" name="build execution" time="0">
+</testcase>
+<testcase classname="default" name="Property ASSERT in fp8_to_q15_corner_formal at fp8_to_q15_corner_formal.v:36.13-36.36" time="0" type="ASSERT" location="fp8_to_q15_corner_formal.v:36.13-36.36" id="_witness_.check_assert_fp8_to_q15_corner_formal_v_36_9">
+</testcase>
+<testcase classname="default" name="Property ASSERT in fp8_to_q15_corner_formal at fp8_to_q15_corner_formal.v:40.17-40.40" time="0" type="ASSERT" location="fp8_to_q15_corner_formal.v:40.17-40.40" id="_witness_.check_assert_fp8_to_q15_corner_formal_v_40_12">
+</testcase>
+<testcase classname="default" name="Property ASSERT in fp8_to_q15_corner_formal at fp8_to_q15_corner_formal.v:44.17-44.40" time="0" type="ASSERT" location="fp8_to_q15_corner_formal.v:44.17-44.40" id="_witness_.check_assert_fp8_to_q15_corner_formal_v_44_15">
+</testcase>
+<testcase classname="default" name="Property ASSERT in fp8_to_q15_corner_formal at fp8_to_q15_corner_formal.v:49.17-49.40" time="0" type="ASSERT" location="fp8_to_q15_corner_formal.v:49.17-49.40" id="_witness_.check_assert_fp8_to_q15_corner_formal_v_49_18">
+</testcase>
+<testcase classname="default" name="Property ASSERT in fp8_to_q15_corner_formal at fp8_to_q15_corner_formal.v:55.17-55.50" time="0" type="ASSERT" location="fp8_to_q15_corner_formal.v:55.17-55.50" id="_witness_.check_assert_fp8_to_q15_corner_formal_v_55_21">
+</testcase>
+<testcase classname="default" name="Property ASSERT in fp8_to_q15_corner_formal at fp8_to_q15_corner_formal.v:60.17-60.40" time="0" type="ASSERT" location="fp8_to_q15_corner_formal.v:60.17-60.40" id="_witness_.check_assert_fp8_to_q15_corner_formal_v_60_24">
+</testcase>
+<testcase classname="default" name="Property ASSERT in fp8_to_q15_corner_formal at fp8_to_q15_corner_formal.v:64.17-64.40" time="0" type="ASSERT" location="fp8_to_q15_corner_formal.v:64.17-64.40" id="_witness_.check_assert_fp8_to_q15_corner_formal_v_64_27">
+</testcase>
+<testcase classname="default" name="Property ASSERT in fp8_to_q15_corner_formal at fp8_to_q15_corner_formal.v:68.17-68.40" time="0" type="ASSERT" location="fp8_to_q15_corner_formal.v:68.17-68.40" id="_witness_.check_assert_fp8_to_q15_corner_formal_v_68_30">
+</testcase>
+<testcase classname="default" name="Property ASSERT in fp8_to_q15_corner_formal at fp8_to_q15_corner_formal.v:72.17-72.40" time="0" type="ASSERT" location="fp8_to_q15_corner_formal.v:72.17-72.40" id="_witness_.check_assert_fp8_to_q15_corner_formal_v_72_33">
+</testcase>
+<testcase classname="default" name="Property ASSERT in fp8_to_q15_corner_formal at fp8_to_q15_corner_formal.v:78.17-78.40" time="0" type="ASSERT" location="fp8_to_q15_corner_formal.v:78.17-78.40" id="_witness_.check_assert_fp8_to_q15_corner_formal_v_78_36">
+</testcase>
+<testcase classname="default" name="Property ASSERT in fp8_to_q15_corner_formal at fp8_to_q15_corner_formal.v:83.17-83.40" time="0" type="ASSERT" location="fp8_to_q15_corner_formal.v:83.17-83.40" id="_witness_.check_assert_fp8_to_q15_corner_formal_v_83_39">
+</testcase>
+<testcase classname="default" name="Property ASSERT in fp8_to_q15_corner_formal at fp8_to_q15_corner_formal.v:89.17-89.40" time="0" type="ASSERT" location="fp8_to_q15_corner_formal.v:89.17-89.40" id="_witness_.check_assert_fp8_to_q15_corner_formal_v_89_42">
+</testcase>
+<testcase classname="default" name="Property ASSERT in fp8_to_q15_corner_formal at fp8_to_q15_corner_formal.v:94.17-94.40" time="0" type="ASSERT" location="fp8_to_q15_corner_formal.v:94.17-94.40" id="_witness_.check_assert_fp8_to_q15_corner_formal_v_94_45">
+</testcase>
+<system-out>SBY 23:59:09 [fp8_to_q15_corner_prove] Removing directory '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/fp8_to_q15_corner_prove'.
+SBY 23:59:09 [fp8_to_q15_corner_prove] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/../rtl/fp8_to_q15.v' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/fp8_to_q15_corner_prove/src/fp8_to_q15.v'.
+SBY 23:59:09 [fp8_to_q15_corner_prove] Copy '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/fp8_to_q15_corner_formal.v' to '/Users/vincent/Work/ternarycore/.worktrees/rtl/formal/fp8_to_q15_corner_prove/src/fp8_to_q15_corner_formal.v'.
+SBY 23:59:09 [fp8_to_q15_corner_prove] engine_0: smtbmc
+SBY 23:59:09 [fp8_to_q15_corner_prove] base: starting process &quot;cd fp8_to_q15_corner_prove/src; yosys -ql ../model/design.log ../model/design.ys&quot;
+SBY 23:59:09 [fp8_to_q15_corner_prove] base: finished (returncode=0)
+SBY 23:59:09 [fp8_to_q15_corner_prove] prep: starting process &quot;cd fp8_to_q15_corner_prove/model; yosys -ql design_prep.log design_prep.ys&quot;
+SBY 23:59:09 [fp8_to_q15_corner_prove] prep: finished (returncode=0)
+SBY 23:59:09 [fp8_to_q15_corner_prove] smt2: starting process &quot;cd fp8_to_q15_corner_prove/model; yosys -ql design_smt2.log design_smt2.ys&quot;
+SBY 23:59:09 [fp8_to_q15_corner_prove] smt2: finished (returncode=0)
+SBY 23:59:09 [fp8_to_q15_corner_prove] engine_0: starting process &quot;cd fp8_to_q15_corner_prove; yosys-smtbmc --presat --unroll --noprogress -t 1  --append 0 --dump-vcd engine_0/trace.vcd --dump-yw engine_0/trace.yw --dump-vlogtb engine_0/trace_tb.v --dump-smtc engine_0/trace.smtc model/design_smt2.smt2&quot;
+SBY 23:59:09 [fp8_to_q15_corner_prove] engine_0: ##   0:00:00  Solver: yices
+SBY 23:59:09 [fp8_to_q15_corner_prove] engine_0: ##   0:00:00  Checking assumptions in step 0..
+SBY 23:59:09 [fp8_to_q15_corner_prove] engine_0: ##   0:00:00  Checking assertions in step 0..
+SBY 23:59:09 [fp8_to_q15_corner_prove] engine_0: ##   0:00:00  Status: passed
+SBY 23:59:09 [fp8_to_q15_corner_prove] engine_0: finished (returncode=0)
+SBY 23:59:09 [fp8_to_q15_corner_prove] engine_0: Status returned by engine: pass
+SBY 23:59:09 [fp8_to_q15_corner_prove] summary: Elapsed clock time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 23:59:09 [fp8_to_q15_corner_prove] summary: Elapsed process time [H:MM:SS (secs)]: 0:00:00 (0)
+SBY 23:59:09 [fp8_to_q15_corner_prove] summary: engine_0 (smtbmc) returned pass
+SBY 23:59:09 [fp8_to_q15_corner_prove] summary: engine_0 did not produce any traces
+SBY 23:59:09 [fp8_to_q15_corner_prove] DONE (PASS, rc=0)
+</system-out>
+<system-err>
+</system-err>
+</testsuite>
+</testsuites>
