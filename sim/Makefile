@@ -13,7 +13,7 @@ VLT_CONFIG = ../ternarycore.vlt
 
 .PHONY: all tb_ternary_mac tb_ternary_dot tb_ternary_gemm clean verify verify-simple verify-all lint formal
 .PHONY: view-mac view-dot view-gemm
-.PHONY: verilator-mac verilator-dot verilator-gemm verilator-all
+.PHONY: verilator-mac verilator-dot verilator-gemm verilator-pipeline-large verilator-all
 
 all: tb_ternary_mac tb_ternary_dot tb_ternary_gemm
 

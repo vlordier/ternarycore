@@ -12,3 +12,7 @@ dependencies = [
 
 [tool.uv]
 dev-dependencies = []
+[project.urls]
+Homepage = "https://github.com/shepherdscientific/ternarycore"
+Repository = "https://github.com/shepherdscientific/ternarycore.git"
+

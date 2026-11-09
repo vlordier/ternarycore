@@ -1,5 +1,22 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
 
-# Ignore all Vivado runs and log files
+# Build artifacts
+*.o
+*.a
+*.so
+sim/obj_dir/
+exported/obj_dir/
+checkpoints/
+vlm_eval/
+exported/layer0_test
+smolvlm_out/
+exported/*.o
+
+# Vivado / Xilinx
 *.runs/
 *.log
 *.jou
@@ -7,11 +24,15 @@
 *.vds
 *.rpt
 *.dcp
-
-# Vivado generated
-*.jou
-*.log
-*.str
+*.bit
+*.bin
+*.backup
+*_backup*
+*.xpr
+*.hw/
+*.cache/
+*.sim/
+*.ip_user_files/
 *.mcs
 *.prm
 .Xil/
@@ -22,26 +43,8 @@ sim/sim_*
 sim/*.vcd
 sim/*.vvp
 
-# Verilator build artifacts
-sim/obj_dir/
+# Verilator
 sim/tests/*.o
-
-# Temporary test files
-test_*.v
-
-# Python cache
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# OS
-.DS_Store
-.docs
-.claude
-opencode.json
-AGENTS.md
-.env.*
 
 # Formal verification artifacts
 formal/*/
@@ -51,51 +54,28 @@ formal/*/
 !formal/*.sh
 !formal/*.tcl
 
-# Editor temporary files
+# Temporary test files
+test_*.v
+
+# Editor
 *.swp
 *.swo
 *~
 
-# Build artifacts
-*.o
-*.a
-*.so
+# OS
+.DS_Store
 
-# Documentation build files
+# Docs
+.docs
+.claude
+opencode.json
+AGENTS.md
+.env.*
+
+# Python env
+.env
+
+# Build/doc artifacts
 *.log
 *.aux
 *.toc
-
-# Vivado / Xilinx generated temporary and working assets
-# Project/work directories, caches, IP build and hardware files
-*.xpr
-*.hw/
-*/hw/
-*.cache/
-*/.Xil/
-*.sim/
-*/sim/
-*.ip_user_files/
-*/ip_user_files/
-*.runs/
-*/runs/
-# bitstream/build intermediates
-*.dcp
-*.bit
-*.bin
-*.backup
-*_backup*
-*.pb
-
-
-obj_dir/
-exported/obj_dir/
-checkpoints/
-vlm_eval/
-gvsoc/
-checkpoints/
-vlm_eval/
-exported/obj_dir/
-exported/*.o
-exported/layer0_test
-smolvlm_out/

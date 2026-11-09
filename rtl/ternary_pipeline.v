@@ -38,7 +38,7 @@ module ternary_pipeline #(
     wire [DATA_WIDTH-1:0] q;
     wire                  q_valid;
 
-    activation_quant #(.DATA_WIDTH(DATA_WIDTH), .PRECISION(15), .INV_WIDTH(INV_WIDTH)) quant (
+    activation_quant #(.DATA_WIDTH(DATA_WIDTH), .PRECISION(PRECISION), .INV_WIDTH(INV_WIDTH)) quant (
         .clk(clk), .rst_n(rst_n),
         .valid_in(valid_in), .x(activation), .inv(inv),
         .q(q), .valid_out(q_valid)

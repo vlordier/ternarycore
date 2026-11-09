@@ -5,8 +5,8 @@
 // where alpha is the learned per-channel scale (fixed-point).
 // Q15: 1.0 = 32768, 2.0 = 65536, etc.  Max representable = 65535 * 2 = ~2.0.
 //
-// COLS: number of parallel channels (default 4 for 4x4 GEMM)
-// Pipeline: 2 cycles (multiply → shift+round+pack).
+// COLS: number of parallel channels.
+// Pipeline: 2 cycles (multiply -> shift+pack+round).
 
 `timescale 1ns / 1ps
 
@@ -24,24 +24,22 @@ module ternary_scale #(
     output reg                          valid_out
 );
 
-    // Separately-named registers per channel (no shared multi-driver reg)
-    reg [ACC_WIDTH+PRECISION:0] prod_0, prod_1, prod_2, prod_3;  // 32+16 = 48 bits
+    // Per-channel product registers
+    reg [ACC_WIDTH+PRECISION:0] prod [0:COLS-1];  // 32+16 = 48 bits
 
-    // Stage 1: per-channel multiply
-    always @(posedge clk or negedge rst_n) begin
-        if (!rst_n) begin
-            prod_0 <= 0; prod_1 <= 0; prod_2 <= 0; prod_3 <= 0;
-        end else if (valid_in) begin
-            prod_0 <= $signed(acc_in[0*ACC_WIDTH +: ACC_WIDTH]) *
-                      $signed({1'b0, alpha [0*(PRECISION+1) +: PRECISION+1]});
-            prod_1 <= $signed(acc_in[1*ACC_WIDTH +: ACC_WIDTH]) *
-                      $signed({1'b0, alpha [1*(PRECISION+1) +: PRECISION+1]});
-            prod_2 <= $signed(acc_in[2*ACC_WIDTH +: ACC_WIDTH]) *
-                      $signed({1'b0, alpha [2*(PRECISION+1) +: PRECISION+1]});
-            prod_3 <= $signed(acc_in[3*ACC_WIDTH +: ACC_WIDTH]) *
-                      $signed({1'b0, alpha [3*(PRECISION+1) +: PRECISION+1]});
+    // Stage 1: per-channel multiply (generate loop)
+    genvar g;
+    generate
+        for (g = 0; g < COLS; g = g + 1) begin : channel_mul
+            always @(posedge clk or negedge rst_n) begin
+                if (!rst_n)
+                    prod[g] <= 0;
+                else if (valid_in)
+                    prod[g] <= $signed(acc_in[g*ACC_WIDTH +: ACC_WIDTH]) *
+                               $signed({1'b0, alpha[g*(PRECISION+1) +: PRECISION+1]});
+            end
         end
-    end
+    endgenerate
 
     // Stage 2: shift, round, pack (2nd cycle)
     reg valid_d1;
@@ -71,15 +69,15 @@ module ternary_scale #(
     endfunction
     /* verilator lint_on UNUSEDSIGNAL */
 
-    always @(posedge clk or negedge rst_n) begin
-        if (!rst_n)
-            result <= 0;
-        else if (valid_d1) begin
-            result[0*ACC_WIDTH +: ACC_WIDTH] <= scale_ch(prod_0);
-            result[1*ACC_WIDTH +: ACC_WIDTH] <= scale_ch(prod_1);
-            result[2*ACC_WIDTH +: ACC_WIDTH] <= scale_ch(prod_2);
-            result[3*ACC_WIDTH +: ACC_WIDTH] <= scale_ch(prod_3);
+    generate
+        for (g = 0; g < COLS; g = g + 1) begin : channel_result
+            always @(posedge clk or negedge rst_n) begin
+                if (!rst_n)
+                    result[g*ACC_WIDTH +: ACC_WIDTH] <= 0;
+                else if (valid_d1)
+                    result[g*ACC_WIDTH +: ACC_WIDTH] <= scale_ch(prod[g]);
+            end
         end
-    end
+    endgenerate
 
 endmodule

@@ -200,7 +200,7 @@ jobs:
   enforce-test-results:
     name: Enforce Test Results
     runs-on: ubuntu-latest
-    needs: [verify-simulation, lint-verilog, check-documentation]
+    needs: [verify-simulation, lint-verilog, verilator-sim, formal-verification, check-documentation]
 
     steps:
     - name: Check all jobs passed
@@ -208,6 +208,7 @@ jobs:
         echo "All required checks passed:"
         echo "- Simulation tests passed"
         echo "- Verilog linting passed (strict)"
+        echo "- Verilator simulations passed"
         echo "- Documentation checks passed"
         echo ""
         echo "✅ Ready for merge to main/dev"

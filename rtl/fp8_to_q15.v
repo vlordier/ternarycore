@@ -9,7 +9,6 @@ module fp8_to_q15 (
     output reg [15:0] q15
 );
 
-    wire       sign = fp8[7];
     wire [4:0] mant_exp = fp8[6:2];  // exp (E5M2 format)
     wire [1:0] mant_frac = fp8[1:0]; // mantissa fractional bits
 
